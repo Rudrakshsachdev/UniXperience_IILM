@@ -1,0 +1,455 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UniXperience - IILM University</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollToPlugin.min.js"></script>
+    
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-spinner"></div>
+    </div>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <img src="{{ url_for('static', filename='images/blue_iilm.jpeg') }}" alt="logo" class="logo-img" width="60" height="60"></i>
+                </div>
+                
+                <div class="logo-text">
+                    <div class="logo-university">IILM University</div>
+                    <div class="logo-campus">Uni<span>Xperience</span></div>
+                </div>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="#header"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="#quick-access"><i class="fas fa-book-open"></i> Resources</a></li>
+                    <li><a href="#news"><i class="fas fa-calendar-alt"></i> Events</a></li>
+                    <li><a href="#features"><i class="fas fa-users"></i> Campus Life</a></li>
+                    <li><a href="#footer"><i class="fas fa-phone-alt"></i> Contact</a></li>
+                </ul>
+            </nav>
+            
+            <!--<div class="nav-buttons">
+                <button class="btn btn-outline"><i class="fas fa-sign-in-alt"></i> Login</button>
+                <button class="btn btn-primary"><i class="fas fa-user-plus"></i> Register</button>
+            </div>
+        -->
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav-overlay"></div>
+    <div class="mobile-nav">
+        <div class="mobile-nav-close">
+            <i class="fas fa-times"></i>
+        </div>
+        <div class="mobile-nav-links">
+            <a href="#header"><i class="fas fa-home"></i> Home</a>
+            <a href="#quick-access"><i class="fas fa-book-open"></i> Resources</a>
+            <a href="#news"><i class="fas fa-calendar-alt"></i> Events</a>
+            <a href="#features"><i class="fas fa-users"></i> Campus Life</a>
+            <a href="#footer"><i class="fas fa-phone-alt"></i> Contact</a>
+            
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div id="particles-js"></div>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="hero-heading">Empowering the Next Generation of <span>Tech Innovators</span></h1>
+                <p class="hero-subheading">UniXperience is your gateway to academic resources, events, and campus life at IILM University's School of Computer Science and Engineering.</p>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary"><a href="#quick-access"><i class="fas fa-rocket"></i> Explore Resources</a></button>
+                    <button class="btn btn-outline"><a href="#news"><i class="fas fa-calendar-check"></i> View Events</a></button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-img-container">
+                    <img src="{{ url_for('static', filename='images/IILM_Front.jpg') }}" alt="logo" class="hero-img">
+                </div>
+                <div class="hero-shape shape-1"></div>
+                <div class="hero-shape shape-2"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="features">
+        <div class="container">
+            <div class="section-heading">
+                <h2 class="section-title">Why Choose UniXperience?</h2>
+                <p class="section-subtitle">A comprehensive platform designed to enhance your academic journey and campus experience.</p>
+            </div>
+            
+            <div class="features-grid">
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-book-open"></i>
+                    </div>
+                    <h3 class="feature-title">Academic Resources</h3>
+                    <p class="feature-desc">Access schedules, timetables, syllabus, and study materials all in one place.</p>
+                    <button class="btn btn-outline"> <a href="#quick-access">Learn More</a></button>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3 class="feature-title">Event Management</h3>
+                    <p class="feature-desc">Stay updated with all campus events, hackathons, workshops, and seminars.</p>
+                    <button class="btn btn-outline"> <a href="#news">Learn More</a></button>
+                </div>
+                
+                <div class="feature-card">
+                    <div class="feature-icon">
+                        <i class="fas fa-users"></i>
+                    </div>
+                    <h3 class="feature-title">Campus Community</h3>
+                    <p class="feature-desc">Connect with peers, faculty, and industry professionals through our platform.</p>
+                    <button class="btn btn-outline"><a href="/campus-community">Learn More</a></button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- News Section -->
+    <section class="news" id="news">
+        <div class="container">
+            <div class="section-heading">
+                <h2 class="section-title">News & Updates</h2>
+                <p class="section-subtitle">Stay informed with the latest announcements, events, and academic notices.</p>
+            </div>
+            
+           <!-- <div class="news-filters">
+    <button class="filter-btn" data-filter="all">All</button>
+    <button class="filter-btn" data-filter="Event">Events</button>
+    <button class="filter-btn" data-filter="Hackathon">Hackathons</button>
+    <button class="filter-btn" data-filter="Holiday">Holidays</button>
+            </div>-->
+
+            
+            <div class="news-container">
+                <div class="news-grid">
+                    <div class="news-card">
+                        <div class="news-img-container">
+                            <img src="{{ url_for('static', filename='images/IEEE.png') }}" alt="IEEE Event" class="news-img">
+                        </div>
+                        <div class="news-content">
+                            <span class="news-date"><i class="far fa-calendar-alt"></i> August 20, 2025</span>
+                            <h3 class="news-title">IEEE Student Chapter Inauguration</h3>
+                            <p class="news-excerpt">Join us for the inauguration of the IEEE Student Chapter with guest speakers from industry.</p>
+                            <span class="news-tag">Event</span>
+                           <a href="/ieee-message" target="_blank" class="news-btn">
+                    <i class="fas fa-external-link-alt"></i> Learn More
+                </a>                       
+
+
+                        </div>
+                    </div>
+                    
+                    <div class="news-card">
+                        <div class="news-img-container">
+                            <img src="{{ url_for('static', filename='images/Nasscom-Logo.png') }}" alt="nasscom" class="news-img">
+                        </div>
+                        <div class="news-content">
+                            <span class="news-date"><i class="far fa-calendar-alt"></i> September 12, 2025</span>
+                            <h3 class="news-title">Industrial Visit Oppurtunity - NASSCOM Centre, Gurugram</h3>
+                            <p class="news-excerpt">Participate in the Nasscom Industrial Visit and explore career opportunities.</p>
+                            <span class="news-tag">Visit</span>
+                            <a href="/nasscom-visit" target="_blank" class="news-btn">
+                    <i class="fas fa-external-link-alt"></i> Learn More
+                </a> 
+                        </div>
+                    </div>
+                    
+                    <div class="news-card">
+                        <div class="news-img-container">
+                            <img src="{{ url_for('static', filename='images/beware.png') }}" alt="Alert" class="news-img">
+                        </div>
+                        <div class="news-content">
+                            <span class="news-date"><i class="far fa-calendar-alt"></i> August 27, 2025</span>
+                            <h3 class="news-title">Important Advisory: Beware of Fake Internships and Oppurtunity Links</h3>
+                            <p class="news-excerpt">Please verify all internship offers and opportunity links before applying.</p>
+                            <span class="news-tag">Alert</span>
+                            <a href="/advisory" target="_blank" class="news-btn">
+                        <i class="fas fa-external-link-alt"></i> Learn More
+                </a> 
+                        </div>
+                    </div>
+
+                    <div class="news-card">
+                        <div class="news-img-container">
+                            <img src="{{ url_for('static', filename='images/engineer.jpg') }}" alt="Alert" class="news-img">
+                        </div>
+                        <div class="news-content">
+                            <span class="news-date"><i class="far fa-calendar-alt"></i> September 15, 2025</span>
+                            <h3 class="news-title">Engineers Day Celebration</h3>
+                            <p class="news-excerpt">Join us in celebrating Engineers Day with various activities and events.</p>
+                            <span class="news-tag">Event</span>
+                            <a href="/engineers-day" target="_blank" class="news-btn">
+                        <i class="fas fa-external-link-alt"></i> Learn More
+                </a> 
+                        </div>
+                    </div>
+
+
+
+                    <div class="news-card">
+                        <div class="news-img-container">
+                            <img src="{{ url_for('static', filename='images/sih_2025.png') }}" alt="Alert" class="news-img">
+                        </div>
+                        <div class="news-content">
+                            <span class="news-date"><i class="far fa-calendar-alt"></i> September 17, 2025</span>
+                            <h3 class="news-title">Smart India Hackathon 2025</h3>
+                            <p class="news-excerpt">Participate in the Smart India Hackathon 2025 and showcase your skills.</p>
+                            <span class="news-tag">Hackathon</span>
+                            <a href="/sih" target="_blank" class="news-btn">
+                        <i class="fas fa-external-link-alt"></i> Learn More
+                </a> 
+                        </div>
+                    </div>
+
+
+                    <div class="news-card">
+                        <div class="news-img-container">
+                            <img src="{{ url_for('static', filename='images/hackathon.jpg') }}" alt="Alert" class="news-img">
+                        </div>
+                        <div class="news-content">
+                            <span class="news-date"><i class="far fa-calendar-alt"></i> September 15, 2025</span>
+                            <h3 class="news-title">Mindbenders 4.0</h3>
+                            <p class="news-excerpt">Join us for Mindbenders 4.0, a platform to showcase your innovative ideas and solutions.</p>
+                            <span class="news-tag">Event</span>
+                            <a href="{{ url_for('static', filename='images/mind.png') }}" target="_blank" class="news-btn">
+                        <i class="fas fa-external-link-alt"></i> Learn More
+                </a> 
+                        </div>
+                    </div>
+
+                </div>
+                
+                <div class="sidebar">
+                    <h3 class="sidebar-title">Announcements</h3>
+                    <div class="announcement-item">
+                        <div class="announcement-icon">
+                            <i class="fas fa-bullhorn"></i>
+                        </div>
+                        <div class="announcement-content">
+                            <div class="announcement-date">August 15, 2025</div>
+                            <h4 class="announcement-title">Admissions Open for 2025-26</h4>
+                            <p>Apply now for the upcoming academic year.</p>
+                            <a href="https://iilm.edu/" target="_blank" class="news-btn">
+                        <i class="fas fa-external-link-alt"></i> Learn More
+                </a> 
+                        </div>
+                    </div>
+                    <div class="announcement-item">
+                        <div class="announcement-icon">
+                            <i class="fas fa-calendar-day"></i>
+                        </div>
+                        <div class="announcement-content">
+                            <div class="announcement-date">August 20, 2025</div>
+                            <h4 class="announcement-title">IEEE Student Chapter</h4>
+                            <p>We're excited to offer you an exclusive chance to become a Founding IEEE Student Member at our university! Remember—only 25 seats are available.</p>
+                            <a href="/ieee-message" target="_blank" class="news-btn">
+                        <i class="fas fa-external-link-alt"></i> Learn More
+                </a> 
+                        </div>
+                    </div>
+
+                    <div class="announcement-item">
+                        <div class="announcement-icon">
+                            <i class="fas fa-chalkboard-teacher"></i>
+                        </div>
+                        <div class="announcement-content">
+                            <div class="announcement-date">August 28, 2025</div>
+                            <h4 class="announcement-title">Important Advisory</h4>
+                            <p>Beware of fake internships and job offers. Always verify with the placement cell.</p>
+                            <a href="/advisory" target="_blank" class="news-btn">
+                        <i class="fas fa-external-link-alt"></i> Learn More
+                </a> 
+                        </div>
+                    </div>
+
+                    <div class="announcement-item">
+                        <div class="announcement-icon">
+                            <i class="fas fa-map-marked-alt"></i>
+                        </div>
+                        <div class="announcement-content">
+                            <div class="announcement-date">September 12, 2025</div>
+                            <h4 class="announcement-title">Industrial Visit Opportunity - NASSCOM Centre, Gurugram</h4>
+                            <p>Participate in the Nasscom Industrial Visit and explore career opportunities.</p>
+                            <a href="/nasscom-visit" target="_blank" class="news-btn">
+                        <i class="fas fa-external-link-alt"></i> Learn More
+                </a> 
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Quick Access Section -->
+    <section class="quick-access" id="quick-access">
+        <div class="container">
+            <div class="section-heading">
+                <h2 class="section-title">Quick Access</h2>
+                <p class="section-subtitle">Get instant access to important academic resources and campus information.</p>
+            </div>
+            
+            <div class="access-grid">
+                <div class="access-card">
+                    <div class="access-icon">
+                        <i class="fas fa-calendar-day"></i>
+                    </div>
+                    <h3 class="access-title">Class Schedule</h3>
+                    <p class="access-desc">View your daily class timetable and room allocations.</p>
+                    <!--<button class="btn btn-primary"> <a href="https://drive.google.com/drive/folders/1m3BfyMy391LRJ8hfILEO2S0RVG2jWOMP">View Schedule</a></button>-->
+                    <a href="https://drive.google.com/drive/folders/1m3BfyMy391LRJ8hfILEO2S0RVG2jWOMP" target="_blank" class="btn btn-primary">View Schedule</a>
+                </div>
+                
+                <div class="access-card">
+                    <div class="access-icon">
+                        <i class="fas fa-book"></i>
+                    </div>
+                    <h3 class="access-title">Syllabus</h3>
+                    <p class="access-desc">Access course syllabus and learning objectives.</p>
+                    <a href="https://drive.google.com/drive/folders/1m3BfyMy391LRJ8hfILEO2S0RVG2jWOMP" target="_blank" class="btn btn-primary">View Syllabus</a>
+                </div>
+                
+                <!--<div class="access-card">
+                    <div class="access-icon">
+                        <i class="fas fa-map-marked-alt"></i>
+                    </div>
+                    <h3 class="access-title">Campus Map</h3>
+                    <p class="access-desc">Navigate through campus with our interactive map.</p>
+                    <button class="btn btn-primary">View Map</button>
+                </div> -->
+
+                <div class="access-card">
+                    <div class="access-icon">
+                        <i class="fas fa-address-book"></i>
+                    </div>
+                    <h3 class="access-title">Directory</h3>
+                    <p class="access-desc">Find faculty and staff contact information.</p>
+                    <a href="https://drive.google.com/drive/folders/1m3BfyMy391LRJ8hfILEO2S0RVG2jWOMP" target="_blank" class="btn btn-primary">View Directory</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Partners Section -->
+    <section class="partners">
+        <div class="container">
+            <div class="section-heading">
+                <h2 class="section-title white">Industry Partner Programs</h2>
+                <p class="section-subtitle">Collaborative programs with industry leaders to enhance your learning experience.</p>
+            </div>
+            
+            <div class="partners-grid">
+                <div class="partner-card">
+                    
+                    <img src="{{ url_for('static', filename='images/micro_logo.png') }}" alt="Microsoft" class="partner-logo" width="180" height="180">
+                    <h3 class="partner-name">Microsoft</h3>
+                    <p class="partner-desc">Cloud computing and AI development program in partnership with Xebia.</p>
+                    <a href="/register-microsoft" class="btn btn-outline">Register Now</a>
+                </div>
+                
+                <div class="partner-card">
+                    <img src="{{ url_for('static', filename='images/L&T.png') }}" alt="L&T" class="partner-logo" width="180" height="180">
+                    <h3 class="partner-name">Larsen & Toubro</h3>
+                    <p class="partner-desc">Industrial training and internship programs for engineering students.</p>
+                    <button class="btn btn-outline">Learn More</button>
+                </div>
+                
+                <div class="partner-card">
+                    <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/9/93/Amazon_Web_Services_Logo.svg/1200px-Amazon_Web_Services_Logo.svg.png" alt="AWS" class="partner-logo">
+                    <h3 class="partner-name">AWS Academy</h3>
+                    <p class="partner-desc">Cloud computing curriculum and certification programs.</p>
+                    <button class="btn btn-outline">Learn More</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>UniXperience</h3>
+                    <p>A student-led initiative to streamline academic workflows for the School of Computer Science and Engineering at IILM University, Gurugram.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/iilmuniversity/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/iilmgurugramofficial/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/school/iilm-university-gurugram/posts/?feedView=all"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="#quick-access"><i class="fas fa-chevron-right"></i> Resources</a></li>
+                        <li><a href="#quick-access"><i class="fas fa-chevron-right"></i> Events Calendar</a></li>
+                        <li><a href="#quick-access"><i class="fas fa-chevron-right"></i> Contact Directory</a></li>
+                        <li><a href="#quick-access"><i class="fas fa-chevron-right"></i> Academic Schedule</a></li>
+                    </ul>
+                </div>
+                
+                <!--<div class="footer-col">
+                    <h3>Support</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Help Center</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> FAQ</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> System Status</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Report an Issue</a></li>
+                    </ul>
+                </div>-->
+                
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul class="footer-links">
+                        <li><a href="https://iilm.edu/"><i class="fas fa-map-marker-alt"></i> IILM University, Gurugram</a></li>
+                        <li><a href="#"><i class="fas fa-phone"></i> +91 9876543210</a></li>
+                        <li><a href="#"><i class="fas fa-envelope"></i> support@unixperience.edu</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 UniXperience - Developed by Rudraksh</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>

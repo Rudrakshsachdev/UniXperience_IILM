@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Engineers Day Celebration - IILM University</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href={{ url_for('static', filename='css/engineers.css') }}>
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <img src="{{ url_for('static', filename='images/blue_iilm.jpeg') }}" alt="logo" class="logo-img" width="60" height="60">
+                </div>
+                <div class="logo-text">
+                    <div class="logo-university">IILM University</div>
+                    <div class="logo-campus">Uni<span>Xperience</span></div>
+                </div>
+            </div>
+            
+            <div class="nav-buttons">
+                <a href="/" class="btn btn-outline"><i class="fas fa-arrow-left"></i> Back to Home</a>
+                <a href="#rsvp" class="btn btn-primary"><i class="fas fa-calendar-check"></i> RSVP Now</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="hero-heading">Engineers Day <span>Celebration</span></h1>
+                <p class="hero-subheading">Join us in honoring the legacy of engineering excellence and celebrating the spirit of innovation at IILM University, Gurugram.</p>
+                <div class="hero-buttons">
+                    <a href="#rsvp" class="btn btn-primary"><i class="fas fa-calendar-check"></i> Confirm Attendance</a>
+                    <a href="#details" class="btn btn-outline"><i class="fas fa-info-circle"></i> Event Details</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-img-container">
+                    <!-- Poster will be added here later -->
+                    <i class="fas fa-image"></i>
+                    <p>Engineers Day Poster Coming Soon</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Event Content Section -->
+    <section class="event-content" id="details">
+        <div class="container">
+            <div class="content-container">
+                <div class="content-header">
+                    <h2 class="content-title">Celebrating Engineering Excellence</h2>
+                    <p class="content-subtitle">Honoring the contributions of engineers and the spirit of innovation that drives our engineering community.</p>
+                </div>
+
+                <div class="info-box">
+                    <h3 class="info-title"><i class="fas fa-calendar-alt"></i> Event Overview</h3>
+                    <p>We are excited to celebrate the contributions of engineers and the spirit of innovation that drives our engineering community.</p>
+                    <p>This special event honors the legacy of engineering excellence and recognizes the achievements of our students and faculty in the field of engineering.</p>
+                    <p>Come together to celebrate engineering innovation, knowledge sharing, and the bright future of technology at IILM University.</p>
+                </div>
+
+                <h3 class="info-title"><i class="fas fa-star"></i> Celebration Highlights</h3>
+                <div class="highlight-grid">
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <i class="fas fa-medal"></i>
+                        </div>
+                        <h4 class="highlight-title">Achievement Recognition</h4>
+                        <p class="highlight-desc">Celebrating the outstanding accomplishments of our engineering students and faculty.</p>
+                    </div>
+                    
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h4 class="highlight-title">Innovation Showcase</h4>
+                        <p class="highlight-desc">Display of innovative projects and research from our engineering departments.</p>
+                    </div>
+                    
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <i class="fas fa-network-wired"></i>
+                        </div>
+                        <h4 class="highlight-title">Knowledge Sharing</h4>
+                        <p class="highlight-desc">Technical talks and presentations on cutting-edge engineering advancements.</p>
+                    </div>
+                    
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h4 class="highlight-title">Community Building</h4>
+                        <p class="highlight-desc">Networking opportunities with industry professionals and alumni.</p>
+                    </div>
+                </div>
+
+                <div class="important-note">
+                    <h4 class="note-title"><i class="fas fa-exclamation-circle"></i> Invitation</h4>
+                    <p>All students, faculty, and staff are cordially invited to participate in this celebration of engineering excellence.</p>
+                </div>
+
+                <div class="cta-box" id="rsvp">
+                    <h3 class="cta-title">🎉 Join the Celebration!</h3>
+                    <p>Be part of this special event honoring engineering innovation and excellence at IILM University.</p>
+                    <a href="#" class="btn btn-primary" style="margin-top: 20px;">
+                        <i class="fas fa-calendar-check"></i> RSVP Now
+                    </a>
+                </div>
+
+                <div class="info-box">
+                    <h3 class="info-title"><i class="fas fa-clock"></i> Event Timing</h3>
+                    <p><strong>Date:</strong> September 15, 2025</p>
+                    <p><strong>Time:</strong> 10:00 AM onwards</p>
+                    <p><strong>Venue:</strong> University Auditorium, IILM University, Gurugram Campus</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>IILM University</h3>
+                    <p>Gurugram Campus</p>
+                    <p>A leading institution for engineering education and innovation.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/iilmuniversity/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/iilmgurugramofficial/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/school/iilm-university-gurugram/posts/?feedView=all"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="https://iilm.edu/engineering-programs"><i class="fas fa-chevron-right"></i> Engineering Programs</a></li>
+                        <li><a href="/"><i class="fas fa-chevron-right"></i> Campus Events</a></li>
+                        <li><a href="/"><i class="fas fa-chevron-right"></i> Research Centers</a></li>
+                        <li><a href="/"><i class="fas fa-chevron-right"></i> Faculty Directory</a></li>
+                        
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Student Resources</h3>
+                    <ul class="footer-links">
+                        <li><a href="/"><i class="fas fa-chevron-right"></i> Academic Calendar</a></li>
+                        <li><a href="/"><i class="fas fa-chevron-right"></i> Learning Management System</a></li>
+                        <li><a href="/"><i class="fas fa-chevron-right"></i> Technical Workshops</a></li>
+                        <li><a href="/"><i class="fas fa-chevron-right"></i> Career Services</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul class="footer-links">
+                        <li><a href="https://iilm.edu/"><i class="fas fa-map-marker-alt"></i> IILM University, Gurugram</a></li>
+                        <li><a href="#"><i class="fas fa-phone"></i> +91 9876543210</a></li>
+                        <li><a href="#"><i class="fas fa-envelope"></i> engineering@iilm.edu</a></li>
+                        <li><a href="#"><i class="fas fa-globe"></i> www.iilm.edu</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 UniXperience - Developed by Rudraksh</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/engineers.js') }}"></script>
+</body>
+</html>

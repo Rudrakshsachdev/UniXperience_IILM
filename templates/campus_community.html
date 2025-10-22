@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Community - IILM University</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollTrigger.min.js"></script>
+
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/campus.css') }}">
+</head>
+<body>
+    <!-- Preloader -->
+    <div class="preloader">
+        <div class="preloader-spinner"></div>
+    </div>
+
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <img src="{{ url_for('static', filename='images/blue_iilm.jpeg') }}" alt="logo" class="logo-img" width="60" height="60"></i>
+                </div>
+                <div class="logo-text">
+                    <div class="logo-university">IILM University</div>
+                    <div class="logo-campus">Uni<span>Xperience</span></div>
+                </div>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="/"><i class="fas fa-home"></i> Home</a></li>
+                    <li><a href="/"><i class="fas fa-book-open"></i> Resources</a></li>
+                    <li><a href="/"><i class="fas fa-calendar-alt"></i> Events</a></li>
+                    <li><a href="/"><i class="fas fa-users"></i> Campus Life</a></li>
+                    <li><a href="/"><i class="fas fa-phone-alt"></i> Contact</a></li>
+                </ul>
+            </nav>
+            
+            <!-- <div class="nav-buttons">
+                <button class="btn btn-outline"><i class="fas fa-sign-in-alt"></i> Login</button>
+                <button class="btn btn-primary"><i class="fas fa-user-plus"></i> Register</button>
+            </div> -->
+            
+            <button class="mobile-menu-btn">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Mobile Navigation -->
+    <div class="mobile-nav-overlay"></div>
+    <div class="mobile-nav">
+        <div class="mobile-nav-close">
+            <i class="fas fa-times"></i>
+        </div>
+        <div class="mobile-nav-links">
+            <a href="/"><i class="fas fa-home"></i> Home</a>
+            <a href="/"><i class="fas fa-book-open"></i> Resources</a>
+            <a href="/"><i class="fas fa-calendar-alt"></i> Events</a>
+            <a href="/"><i class="fas fa-users"></i> Campus Life</a>
+            <a href="/"><i class="fas fa-phone-alt"></i> Contact</a>
+           
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div id="particles-js"></div>
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="hero-heading">Campus <span>Community</span></h1>
+                <p class="hero-subheading">Discover the vibrant student clubs and communities at IILM University that help you connect, learn, and grow beyond the classroom.</p>
+                <div class="hero-buttons">
+                    <a href="/" class="btn btn-primary"><i class="fas fa-arrow-left"></i> Back to Home</a>
+                    <a href="#clubs" class="btn btn-outline"><i class="fas fa-users"></i> Explore Clubs</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-img-container">
+                    <img src="https://images.unsplash.com/photo-1523580494863-6f3031224c94?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" alt="Campus Community" class="hero-img">
+                </div>
+                <div class="hero-shape shape-1"></div>
+                <div class="hero-shape shape-2"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clubs Section -->
+    <section class="clubs" id="clubs">
+        <div class="container">
+            <div class="section-heading">
+                <h2 class="section-title">Student Clubs & Organizations</h2>
+                <p class="section-subtitle">Join one of our vibrant student clubs to connect with like-minded peers, develop new skills, and enhance your university experience.</p>
+            </div>
+            
+            <div class="clubs-grid">
+                <div class="club-card">
+                    <div class="club-icon">
+                        <img src="{{ url_for('static', filename='images/Ai-logo.png') }}" alt="logo" class="hero-img">
+                    </div>
+                    <h3 class="club-title">AI Sync Tech</h3>
+                    <p class="club-desc">The AI Sync Tech Club is a community for exploring Artificial Intelligence and emerging technologies. Guided by our Faculty Mentor Sonam Ma’am and led by President Yug Prakash, the club focuses on learning, innovation, and collaboration through projects, workshops, and events.</p>
+                    <div class="club-meta">
+                        <div class="club-meta-item">
+                            <i class="fas fa-user-friends"></i>
+                            <span>150+ Members</span>
+                        </div>
+                        <div class="club-meta-item">
+                            <i class="fas fa-calendar"></i>
+                            <span>Weekly Meetings</span>
+                        </div>
+                        <div class="club-meta-item">
+                            <i class="fas fa-user-graduate"></i>
+                            <span>Open to All</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="club-card">
+                    <div class="club-icon">
+                        <img src="{{ url_for('static', filename='images/aignite.jpg') }}" alt="logo" class="hero-img">
+                    </div>
+                    <h3 class="club-title">
+                         <a href="https://aignitetech.vercel.app/" target="_blank">AIgnite</a>
+                    </h3>
+                    <p class="club-desc">AIgnite is a student-led initiative that sparks curiosity and innovation in Artificial Intelligence. With Anurag Jain as the Faculty Mentor and Rudraksh Sachdeva as the President, the club inspires students to explore, create, and lead in the world of AI through interactive sessions, projects, and tech-driven activities.</p>
+                    
+
+                    <div class="club-meta">
+                        <div class="club-meta-item">
+                            <i class="fas fa-user-friends"></i>
+                            <span>90+ Members</span>
+                        </div>
+                        <div class="club-meta-item">
+                            <i class="fas fa-calendar"></i>
+                            <span>Bi-weekly Sessions</span>
+                        </div>
+
+                        <div class="club-meta-item">
+                            <i class="fas fa-user-graduate"></i>
+                            <span>Open to All</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="club-card">
+                    <div class="club-icon">
+                        <img src="{{ url_for('static', filename='images/byte_force.jpg') }}" alt="logo" class="hero-img">
+                    </div>
+                    <h3 class="club-title">Byte Force</h3>
+                    <p class="club-desc">Byte Force is the coding club that empowers students to sharpen their programming skills and problem-solving mindset. Under the mentorship of Aarti Chugh Ma’am and the leadership of President Shailesh, the club organizes coding challenges, hackathons, and peer-learning sessions to foster logic, creativity, and innovation in the world of code.</p>
+                    <div class="club-meta">
+                        <div class="club-meta-item">
+                            <i class="fas fa-user-friends"></i>
+                            <span>80+ Members</span>
+                        </div>
+                        <div class="club-meta-item">
+                            <i class="fas fa-calendar"></i>
+                            <span>Weekly Workshops</span>
+                        </div>
+
+                        <div class="club-meta-item">
+                            <i class="fas fa-user-graduate"></i>
+                            <span>Open to All</span>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div class="club-card">
+                    <div class="club-icon">
+                        <img src="{{ url_for('static', filename='images/acm.png') }}" alt="logo" class="hero-img">
+                    </div>
+                    <h3 class="club-title">ACM</h3>
+                    <p class="club-desc">The ACM Student Chapter at IILM University is a hub for students passionate about computer science and technology. Under the mentorship of Preeti Ma’am and the leadership of President Tanvi, the club engages members through coding, research, workshops, and global competitions, empowering students to excel in the world of computing and innovation.</p>
+                    <div class="club-meta">
+                        <div class="club-meta-item">
+                            <i class="fas fa-user-friends"></i>
+                            <span>80+ Members</span>
+                        </div>
+                        <div class="club-meta-item">
+                            <i class="fas fa-calendar"></i>
+                            <span>Weekly Workshops</span>
+                        </div>
+
+                        <div class="club-meta-item">
+                            <i class="fas fa-user-graduate"></i>
+                            <span>Open to All</span>
+                        </div>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>UniXperience</h3>
+                    <p>A student-led initiative to streamline academic workflows for the School of Computer Science and Engineering at IILM University.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/iilmuniversity/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/iilmgurugramofficial/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/school/iilm-university-gurugram/posts/?feedView=all"><i class="fab fa-linkedin-in"></i></a>
+                        
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="https://drive.google.com/drive/folders/1m3BfyMy391LRJ8hfILEO2S0RVG2jWOMP"><i class="fas fa-chevron-right"></i> Resources</a></li>
+                        <li><a href="https://drive.google.com/drive/folders/1m3BfyMy391LRJ8hfILEO2S0RVG2jWOMP"><i class="fas fa-chevron-right"></i> Events Calendar</a></li>
+                        <li><a href="https://drive.google.com/drive/folders/1m3BfyMy391LRJ8hfILEO2S0RVG2jWOMP"><i class="fas fa-chevron-right"></i> Contact Directory</a></li>
+                        <li><a href="https://drive.google.com/drive/folders/1m3BfyMy391LRJ8hfILEO2S0RVG2jWOMP"><i class="fas fa-chevron-right"></i> Academic Schedule</a></li>
+                    </ul>
+                </div>
+                
+                <!--<div class="footer-col">
+                    <h3>Support</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Help Center</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> FAQ</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> System Status</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Report an Issue</a></li>
+                    </ul>
+                </div>-->
+                
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-map-marker-alt"></i> IILM University, Gurugram</a></li>
+                        <li><a href="#"><i class="fas fa-phone"></i> +91 9876543210</a></li>
+                        <li><a href="#"><i class="fas fa-envelope"></i> support@unixperience.edu</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 UniXperience - Developed by Rudraksh</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/campus.js') }}"></script>
+</body>
+</html>

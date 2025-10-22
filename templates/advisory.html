@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cybersecurity Alert - UniXperience - IILM University</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href={{ url_for('static', filename='css/advisory.css') }}>
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <img src="{{ url_for('static', filename='images/blue_iilm.jpeg') }}" alt="logo" class="logo-img" width="60" height="60">
+                </div>
+                <div class="logo-text">
+                    <div class="logo-university">IILM University</div>
+                    <div class="logo-campus">Uni<span>Xperience</span></div>
+                </div>
+            </div>
+            
+            <div class="nav-buttons">
+                <a href="/" class="btn btn-outline"><i class="fas fa-arrow-left"></i> Back to Home</a>
+                <a href="#report" class="btn btn-alert"><i class="fas fa-exclamation-triangle"></i> Report Suspicious Link</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="hero-heading">Cybersecurity <span>Alert</span></h1>
+                <p class="hero-subheading">Important notice regarding suspicious links and messages being circulated to students.</p>
+                <div class="hero-buttons">
+                    <a href="#details" class="btn btn-primary"><i class="fas fa-shield-alt"></i> Safety Guidelines</a>
+                    <a href="#report" class="btn btn-outline"><i class="fas fa-flag"></i> Report Incident</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-img-container">
+                    <img src="https://images.unsplash.com/photo-1563013544-824ae1b704d3?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" alt="Cybersecurity Alert" class="hero-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Alert Content Section -->
+    <section class="alert-content" id="details">
+        <div class="container">
+            <div class="content-container">
+                <div class="content-header">
+                    <h2 class="content-title">Important Cybersecurity Notice</h2>
+                    <p class="content-subtitle">Please read this important information regarding your digital safety and security.</p>
+                </div>
+
+                <div class="info-box">
+                    <h3 class="info-title"><i class="fas fa-exclamation-triangle"></i> Security Advisory</h3>
+                    <p>Dear Students,</p>
+                    <p>It has come to our notice that some unknown links and messages are being circulated regarding internships, participation opportunities, etc.</p>
+                    <p>You are strictly advised not to click on or respond to such links/messages as they may compromise your sensitive information.</p>
+                </div>
+
+                <h3 class="info-title"><i class="fas fa-ban"></i> What to Avoid</h3>
+                <div class="warning-grid">
+                    <div class="warning-card">
+                        <div class="warning-icon">
+                            <i class="fas fa-link"></i>
+                        </div>
+                        <h4 class="warning-title">Unknown Links</h4>
+                        <p class="warning-desc">Do not click on links from unknown or unverified sources.</p>
+                    </div>
+                    
+                    <div class="warning-card">
+                        <div class="warning-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h4 class="warning-title">Suspicious Messages</h4>
+                        <p class="warning-desc">Avoid responding to messages offering unrealistic opportunities.</p>
+                    </div>
+                    
+                    <div class="warning-card">
+                        <div class="warning-icon">
+                            <i class="fas fa-share-square"></i>
+                        </div>
+                        <h4 class="warning-title">Sharing Information</h4>
+                        <p class="warning-desc">Never share personal or login information with unknown parties.</p>
+                    </div>
+                    
+                    <div class="warning-card">
+                        <div class="warning-icon">
+                            <i class="fas fa-download"></i>
+                        </div>
+                        <h4 class="warning-title">Unexpected Attachments</h4>
+                        <p class="warning-desc">Do not download attachments from unverified sources.</p>
+                    </div>
+                </div>
+
+                <h3 class="info-title"><i class="fas fa-shield-alt"></i> Safe Practices</h3>
+                <div class="safe-grid">
+                    <div class="safe-card">
+                        <div class="safe-icon">
+                            <i class="fas fa-check-circle"></i>
+                        </div>
+                        <h4 class="safe-title">Verify Sources</h4>
+                        <p class="safe-desc">Always verify information through official university channels.</p>
+                    </div>
+                    
+                    <div class="safe-card">
+                        <div class="safe-icon">
+                            <i class="fas fa-user-shield"></i>
+                        </div>
+                        <h4 class="safe-title">Use Official Channels</h4>
+                        <p class="safe-desc">Rely on program coordinators and faculty for authentic information.</p>
+                    </div>
+                    
+                    <div class="safe-card">
+                        <div class="safe-icon">
+                            <i class="fas fa-lock"></i>
+                        </div>
+                        <h4 class="safe-title">Protect Accounts</h4>
+                        <p class="safe-desc">Use strong, unique passwords for your university accounts.</p>
+                    </div>
+                    
+                    <div class="safe-card">
+                        <div class="safe-icon">
+                            <i class="fas fa-question-circle"></i>
+                        </div>
+                        <h4 class="safe-title">When in Doubt, Ask</h4>
+                        <p class="safe-desc">Contact IT support if you're unsure about any communication.</p>
+                    </div>
+                </div>
+
+                <div class="important-note">
+                    <h4 class="note-title"><i class="fas fa-exclamation-circle"></i> Important Notice</h4>
+                    <p>Please rely only on official university channels (program & Section coordinators, faculty members etc.) and communications for authentic information regarding internships, events, or any participation opportunities.</p>
+                    <p>Your caution will help keep your data and accounts safe.</p>
+                </div>
+
+                <div class="cta-box" id="report">
+                    <h3 class="cta-title">⚠️ Report Suspicious Activity</h3>
+                    <p>If you receive any suspicious messages or links, please report them immediately to the university IT department.</p>
+                    <a href="mailto:it-support@iilm.edu" class="btn btn-alert" style="margin-top: 20px;">
+                        <i class="fas fa-envelope"></i> Report to IT Department
+                    </a>
+                </div>
+
+                <div class="info-box">
+                    <h3 class="info-title"><i class="fas fa-headset"></i> Contact Information</h3>
+                    <p>📧 Email: it-support@iilm.edu</p>
+                    <p>📞 Phone: +91-XXXXX-XXXXX</p>
+                    <p>🏢 Office: IT Department, Ground Floor, Admin Block</p>
+                    <p>⏰ Hours: Monday-Saturday, 9:00 AM - 5:00 PM</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>UniXperience</h3>
+                    <p>A student-led initiative to streamline academic workflows for the School of Computer Science and Engineering at IILM University.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/iilmuniversity/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/iilmgurugramofficial/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/school/iilm-university-gurugram/posts/?feedView=all"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="/"><i class="fas fa-chevron-right"></i> Resources</a></li>
+                        <li><a href="/"><i class="fas fa-chevron-right"></i> Events Calendar</a></li>
+                        <li><a href="/"><i class="fas fa-chevron-right"></i> Contact Directory</a></li>
+                        <li><a href="/"><i class="fas fa-chevron-right"></i> Academic Schedule</a></li>
+                    </ul>
+                </div>
+                
+                <!--<div class="footer-col">
+                    <h3>Support</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Help Center</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> FAQ</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> System Status</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Report an Issue</a></li>
+                    </ul>
+                </div>-->
+                
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul class="footer-links">
+                        <li><a href="https://iilm.edu/"><i class="fas fa-map-marker-alt"></i> IILM University, Gurugram</a></li>
+                        <li><a href="#"><i class="fas fa-phone"></i> +91 9876543210</a></li>
+                        <li><a href="#"><i class="fas fa-envelope"></i> support@campus360.edu</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 UniXperience - Developed by Rudraksh</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/advisory.js') }}"></script>
+</body>
+</html>

@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IEEE Membership - UniXperience - IILM University</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href={{ url_for('static', filename='css/ieee.css') }}>
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <img src="{{ url_for('static', filename='images/blue_iilm.jpeg') }}" alt="logo" class="logo-img" width="60" height="60">
+                </div>
+                <div class="logo-text">
+                    <div class="logo-university">IILM University</div>
+                    <div class="logo-campus">Uni<span>Xperience</span></div>
+                </div>
+            </div>
+            
+            <div class="nav-buttons">
+                <a href="/" class="btn btn-outline"><i class="fas fa-arrow-left"></i> Back to Home</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="hero-heading">IEEE Student <span>Membership</span></h1>
+                <p class="hero-subheading">Join the prestigious IEEE community and unlock exclusive benefits for your academic and professional growth.</p>
+                <div class="hero-buttons">
+                    <a href="https://forms.gle/4LUcmC5PVPcifi8M7" target="_blank" class="btn btn-primary"><i class="fas fa-edit"></i> Register Interest</a>
+                    <a href="https://students.ieee.org/membership-benefits/" target="_blank" class="btn btn-outline"><i class="fas fa-external-link-alt"></i> Explore Benefits</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-img-container">
+                    <img src="https://images.unsplash.com/photo-1581092918056-0c4c3acd3789?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80" alt="IEEE Community" class="hero-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- IEEE Content Section -->
+    <section class="ieee-content">
+        <div class="container">
+            <div class="content-container">
+                <div class="content-header">
+                    <h2 class="content-title">Exclusive Founding Membership Opportunity</h2>
+                    <p class="content-subtitle">We're excited to offer you an exclusive chance to become a Founding IEEE Student Member at our university! Remember—only 25 seats are available.</p>
+                </div>
+
+                <div class="content-section">
+                    <h3 class="section-title"><i class="fas fa-key"></i> Key Benefits of IEEE Student Membership</h3>
+                    <ul class="content-list">
+                        <li>Access to global support—grants, scholarships, travel funding, awards, and fellowships for your academic growth and professional development</li>
+                        <li>Funding opportunities for chapter activities, workshops, and events through IEEE Student Branch support</li>
+                        <li>Free website hosting, resource kits, and tools to help run your chapter seamlessly</li>
+                        <li>Mentorship, career guidance, and networking with industry leaders and academic experts worldwide</li>
+                        <li>Opportunities to present research and participate in international IEEE conferences with travel grant support</li>
+                    </ul>
+                    <p>👉 Explore more benefits here: <a href="https://students.ieee.org/membership-benefits/" target="_blank">https://students.ieee.org/membership-benefits/</a></p>
+                </div>
+
+                <div class="content-section">
+                    <h3 class="section-title"><i class="fas fa-bullseye"></i> Why Join the IEEE Student Chapter @ IILM?</h3>
+                    <ul class="content-list">
+                        <li>Showcase your technical skills in hackathons, seminars, and certification programs</li>
+                        <li>Engage with like-minded peers and senior professionals across disciplines</li>
+                        <li>Enhance your résumé with prestigious IEEE credentials and worldwide recognition</li>
+                        <li>Get a chance to contest for leadership roles like Chair, Vice-Chair, Secretary, Treasurer and build your leadership profile</li>
+                    </ul>
+                </div>
+
+                <div class="cta-box">
+                    <h3 class="cta-title">✨ Ready to be a Founding Member?</h3>
+                    <p>Fill out the Google form here to register your interest: <a href="https://forms.gle/4LUcmC5PVPcifi8M7" target="_blank">https://forms.gle/4LUcmC5PVPcifi8M7</a></p>
+                    <p>📌 After filling the interest form, you will receive the IEEE official registration link for further process and payment. (approx. 1500/- INR)</p>
+                    <a href="https://forms.gle/4LUcmC5PVPcifi8M7" target="_blank" class="btn btn-primary" style="margin-top: 20px;">
+                        <i class="fas fa-edit"></i> Register Now
+                    </a>
+                </div>
+
+                <div class="content-section">
+                    <h3 class="section-title"><i class="fas fa-rocket"></i> Let's lead the future together with IEEE!</h3>
+                </div>
+
+                <div class="contact-info">
+                    <h3 class="contact-title"><i class="fas fa-question-circle"></i> For any queries kindly contact:</h3>
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <i class="fas fa-user"></i> Dr. Akshat Agrawal
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-briefcase"></i> Associate Professor
+                        </div>
+                        <div class="contact-item">
+                            <i class="fas fa-phone"></i> 9953580510
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>UniXperience</h3>
+                    <p>A student-led initiative to streamline academic workflows for the School of Computer Science and Engineering at IILM University, Gurugram.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/iilmuniversity/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/iilmgurugramofficial/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/school/iilm-university-gurugram/posts/?feedView=all"><i class="fab fa-linkedin-in"></i></a>
+                        
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="/"><i class="fas fa-chevron-right"></i> Resources</a></li>
+                        <li><a href="/"><i class="fas fa-chevron-right"></i> Events Calendar</a></li>
+                        <li><a href="/"><i class="fas fa-chevron-right"></i> Campus Map</a></li>
+                        <li><a href="/"><i class="fas fa-chevron-right"></i> Contact Directory</a></li>
+                        <li><a href="/"><i class="fas fa-chevron-right"></i> Academic Schedule</a></li>
+                    </ul>
+                </div>
+                
+                <!--<div class="footer-col">
+                    <h3>Support</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Help Center</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> FAQ</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> System Status</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Report an Issue</a></li>
+                    </ul>
+                </div>-->
+                
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul class="footer-links">
+                        <li><a href="https://iilm.edu/"><i class="fas fa-map-marker-alt"></i> IILM University, Gurugram</a></li>
+                        <li><a href="#"><i class="fas fa-phone"></i> +91 9876543210</a></li>
+                        <li><a href="#"><i class="fas fa-envelope"></i> support@UniXperience.edu</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 UniXperience - Developed by Rudraksh</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src={{ url_for('static', filename='js/ieee.js') }}></script>
+</body>
+</html>

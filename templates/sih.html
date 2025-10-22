@@ -1,0 +1,227 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIH 2025 Internal Hackathon - UniXperience - IILM University</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href={{ url_for('static', filename='css/sih.css') }}>
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <img src="{{ url_for('static', filename='images/blue_iilm.jpeg') }}" alt="logo" class="logo-img" width="60" height="60">
+                </div>
+                <div class="logo-text">
+                    <div class="logo-university">IILM University</div>
+                    <div class="logo-campus">Uni<span>Xperience</span></div>
+                </div>
+            </div>
+            
+            <div class="nav-buttons">
+                <a href="/" class="btn btn-outline"><i class="fas fa-arrow-left"></i> Back to Home</a>
+                <a href="#register" class="btn btn-primary"><i class="fas fa-user-plus"></i> Register Now</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="hero-heading">Internal Hackathon <span>SIH 2025</span></h1>
+                <p class="hero-subheading">Your gateway to the Smart India Hackathon - showcase your innovation and represent our college at the national level!</p>
+                <div class="hero-buttons">
+                    <a href="#register" class="btn btn-primary"><i class="fas fa-user-plus"></i> Register Now</a>
+                    <a href="#details" class="btn btn-outline"><i class="fas fa-info-circle"></i> Learn More</a>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="hero-img-container">
+                    <img src="{{ url_for('static', filename='images/sih.jpg') }}" alt="Hackathon Poster" class="hero-img">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hackathon Content Section -->
+    <section class="hackathon-content" id="details">
+        <div class="container">
+            <div class="content-container">
+                <div class="content-header">
+                    <h2 class="content-title">Internal Hackathon for Smart India Hackathon 2025</h2>
+                    <p class="content-subtitle">Join us for this exciting opportunity to innovate, build, and shine on the biggest stage!</p>
+                </div>
+
+                <div class="info-box">
+                    <h3 class="info-title"><i class="fas fa-calendar-alt"></i> Event Details</h3>
+                    <p><strong>Date:</strong> 18th September, 2025</p>
+                    <p><strong>Format:</strong> PPT presentations based on SIH problem statements</p>
+                    <p><strong>Problem Statements:</strong> Available at <a href="https://sih.gov.in/sih2025PS" target="_blank">https://sih.gov.in/sih2025PS</a></p>
+                </div>
+
+                <h3 class="info-title"><i class="fas fa-trophy"></i> Why Participate?</h3>
+                <div class="highlight-grid">
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h4 class="highlight-title">National Recognition</h4>
+                        <p class="highlight-desc">Chance to represent our college at the national level.</p>
+                    </div>
+                    
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <i class="fas fa-lightbulb"></i>
+                        </div>
+                        <h4 class="highlight-title">Showcase Innovation</h4>
+                        <p class="highlight-desc">Present your innovative solutions to real-world problems.</p>
+                    </div>
+                    
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h4 class="highlight-title">Team Building</h4>
+                        <p class="highlight-desc">Work with talented peers and build lasting connections.</p>
+                    </div>
+                    
+                    <div class="highlight-card">
+                        <div class="highlight-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <h4 class="highlight-title">Prizes & Recognition</h4>
+                        <p class="highlight-desc">Win exciting prizes and gain recognition for your skills.</p>
+                    </div>
+                </div>
+
+                <div class="info-box">
+                    <h3 class="info-title"><i class="fas fa-users"></i> Team Formation Rules</h3>
+                    <p>Each team must have <strong>six members</strong> with <strong>at least one female participant</strong>.</p>
+                    <p>Teams should register through the official form before the deadline.</p>
+                </div>
+
+                <h3 class="info-title"><i class="fas fa-chalkboard"></i> Hackathon Format</h3>
+                <div class="important-note">
+                    <p>The Internal Hackathon will be based on PPT presentations. The official PPT format is available on the SIH website.</p>
+                    <p>Teams should prepare their presentations according to the specified guidelines.</p>
+                </div>
+
+                <div class="cta-box" id="register">
+                    <h3 class="cta-title">🚀 Ready to Innovate?</h3>
+                    <p>Register now for the Internal Hackathon or volunteer to be part of this amazing journey!</p>
+                    <a href="#" target="_blank" class="btn btn-primary" style="margin-top: 20px;">
+                        <i class="fas fa-edit"></i> Register Now
+                    </a>
+                </div>
+
+                <div class="qr-container">
+                    <div class="qr-code">
+                        <i class="fas fa-qrcode"></i>
+                        <p>Scan to Register</p>
+                    </div>
+                </div>
+
+                <h3 class="info-title"><i class="fas fa-phone-alt"></i> Contact Information</h3>
+                <div class="contact-grid">
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h4 class="contact-name">Om Rohilla</h4>
+                        <p class="contact-number">8178536502</p>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h4 class="contact-name">Khushi Diwan</h4>
+                        <p class="contact-number">9354900378</p>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h4 class="contact-name">Sangita</h4>
+                        <p class="contact-number">87000 25525</p>
+                    </div>
+                    
+                    <div class="contact-card">
+                        <div class="contact-icon">
+                            <i class="fas fa-user"></i>
+                        </div>
+                        <h4 class="contact-name">Varun</h4>
+                        <p class="contact-number">9667924175</p>
+                    </div>
+                </div>
+
+                <div class="info-box">
+                    <h3 class="info-title"><i class="fas fa-chalkboard-teacher"></i> Faculty Coordinators</h3>
+                    <p>Dr. Pooja Batra Nagpal</p>
+                    <p>Dr. Punit Bawa</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>UniXperience</h3>
+                    <p>A student-led initiative to streamline academic workflows for the School of Computer Science and Engineering at IILM University.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/iilmuniversity/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/iilmgurugramofficial/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/school/iilm-university-gurugram/posts/?feedView=all"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="/"><i class="fas fa-chevron-right"></i> Resources</a></li>
+                        <li><a href="/"><i class="fas fa-chevron-right"></i> Events Calendar</a></li>
+                        <li><a href="/"><i class="fas fa-chevron-right"></i> Campus Map</a></li>
+                        <li><a href="/"><i class="fas fa-chevron-right"></i> Contact Directory</a></li>
+                        <li><a href="/"><i class="fas fa-chevron-right"></i> Academic Schedule</a></li>
+                    </ul>
+                </div>
+                
+                <!--<div class="footer-col">
+                    <h3>Support</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Help Center</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> FAQ</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> System Status</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Report an Issue</a></li>
+                    </ul>
+                </div>-->
+                
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul class="footer-links">
+                        <li><a href="https://iilm.edu/"><i class="fas fa-map-marker-alt"></i> IILM University, Gurugram</a></li>
+                        <li><a href="#"><i class="fas fa-phone"></i> +91 9876543210</a></li>
+                        <li><a href="#"><i class="fas fa-envelope"></i> support@campus360.edu</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 UniXperience - Developed by Rudraksh</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/sih.js') }}"></script>
+</body>
+</html>

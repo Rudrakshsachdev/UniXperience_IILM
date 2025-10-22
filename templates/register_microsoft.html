@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Microsoft Program Registration - UniXperience - IILM University</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href={{ url_for('static', filename='css/register.css') }}>
+</head>
+<body>
+    <!-- Header -->
+    <header id="header">
+        <div class="container header-container">
+            <div class="logo">
+                <div class="logo-icon">
+                    <img src="{{ url_for('static', filename='images/blue_iilm.jpeg') }}" alt="logo" class="logo-img" width="60" height="60">
+                </div>
+                <div class="logo-text">
+                    <div class="logo-university">IILM University</div>
+                    <div class="logo-campus">Uni<span>Xperience</span></div>
+                </div>
+            </div>
+            
+            <div class="nav-buttons">
+                <a href="/" class="btn btn-outline"><i class="fas fa-arrow-left"></i> Back to Home</a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <div class="hero-text">
+                <h1 class="hero-heading">Microsoft Program <span>Registration</span></h1>
+                <p class="hero-subheading">Register for exclusive Microsoft learning opportunities and enhance your technical skills with industry-relevant training.</p>
+            </div>
+            <div class="hero-image">
+                <div class="hero-img-container">
+                    <img src={{ url_for('static', filename='images/soft.png') }} alt="Microsoft Program" class="hero-img" width="600" height="400">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Form Content Section -->
+    <section class="form-content">
+        <div class="container">
+            <div class="content-container">
+                <div class="content-header">
+                    <h2 class="content-title">Program Registration Form</h2>
+                    <p class="content-subtitle">Fill out the form below to register for the Microsoft learning program.</p>
+                </div>
+
+                <!-- Flash messages (for success/error feedback) -->
+                <div id="flash-messages">
+                    <!-- Messages will be inserted here by JavaScript -->
+                </div>
+
+                <form class="registration-form" action="/register-microsoft" method="POST">
+                    <div class="form-group">
+                        <label for="name" class="form-label">Full Name</label>
+                        <input type="text" id="name" name="name" class="form-input" placeholder="Enter your full name" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" id="email" name="email" class="form-input" placeholder="Enter your email address" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone" class="form-label">Phone</label>
+                        <input type="tel" id="phone" name="phone" class="form-input" placeholder="Enter your phone number" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="phone" class="form-label">Student ID</label>
+                        <input type="tel" id="student_id" name="student_id" class="form-input" placeholder="Enter your student ID" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="urn" class="form-label">URN</label>
+                        <input type="text" id="urn" name="urn" class="form-input" placeholder="Enter your URN" required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="course" class="form-label">Select Course</label>
+                        <select id="course" name="course" class="form-select" required>
+                            <option value="" disabled selected>Select your course</option>
+                            <option value="Azure Fundamentals">Microsoft Azure Fundamentals</option>
+                            <option value="Power Platform">Microsoft Power Platform</option>
+                            <option value="Data Science">Microsoft Data Science</option>
+                            <option value="AI Engineering">Microsoft AI Engineering</option>
+                            <option value="DevOps">Microsoft DevOps</option>
+                            <option value="Other">Other Microsoft Technology</option>
+                        </select>
+                    </div>
+
+                    <div class="important-note">
+                        <h4 class="note-title"><i class="fas fa-exclamation-circle"></i> Important Note</h4>
+                        <p>Please ensure all information provided is accurate. You will receive a confirmation email after successful registration.</p>
+                    </div>
+
+                    <button type="submit" class="btn btn-microsoft" action="/register-microsoft" style="width: 100%; margin-top: 20px;">
+                        <i class="fas fa-paper-plane"></i> Submit Registration
+                    </button>
+                </form>
+
+                <div class="info-box">
+                    <h3 class="info-title"><i class="fas fa-info-circle"></i> Program Details</h3>
+                    <p>This Microsoft program offers hands-on training, industry-recognized certifications, and opportunities to work on real-world projects. The program is open to all students interested in advancing their technical skills.</p>
+                    <p>For any queries about the program, please contact the department coordinator.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-grid">
+                <div class="footer-col">
+                    <h3>UniXperience</h3>
+                    <p>A student-led initiative to streamline academic workflows for the School of Computer Science and Engineering at IILM University.</p>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/iilmuniversity/"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://www.instagram.com/iilmgurugramofficial/"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/school/iilm-university-gurugram/posts/?feedView=all"><i class="fab fa-linkedin-in"></i></a>
+                    </div>
+                </div>
+                
+                <div class="footer-col">
+                    <h3>Quick Links</h3>
+                    <ul class="footer-links">
+                        <li><a href="/"><i class="fas fa-chevron-right"></i> Resources</a></li>
+                        <li><a href="/"><i class="fas fa-chevron-right"></i> Events Calendar</a></li>
+                        <li><a href="/"><i class="fas fa-chevron-right"></i> Contact Directory</a></li>
+                        <li><a href="/"><i class="fas fa-chevron-right"></i> Academic Schedule</a></li>
+                    </ul>
+                </div>
+                
+               <!-- <div class="footer-col">
+                    <h3>Support</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Help Center</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> FAQ</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> System Status</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Report an Issue</a></li>
+                    </ul>
+                </div>-->
+                
+                <div class="footer-col">
+                    <h3>Contact Us</h3>
+                    <ul class="footer-links">
+                        <li><a href="https://iilm.edu/"><i class="fas fa-map-marker-alt"></i> IILM University, Gurugram</a></li>
+                        <li><a href="#"><i class="fas fa-phone"></i> +91 9876543210</a></li>
+                        <li><a href="#"><i class="fas fa-envelope"></i> support@campus360.edu</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2025 UniXperience - Developed by Rudraksh</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="{{ url_for('static', filename='js/register.js') }}"></script>
+</body>
+</html>
