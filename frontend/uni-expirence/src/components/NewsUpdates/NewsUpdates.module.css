@@ -1,0 +1,365 @@
+/* ─────────────────────────────────────────────
+   IILM UniXperience — News & Updates
+   Matches Navbar Design System
+   Palette: Navy #1E3A5F · White · Accent #A12A2F
+   ───────────────────────────────────────────── */
+
+/* ══════════════════════════════
+   SECTION
+   ══════════════════════════════ */
+.section {
+  padding: 6rem 2rem;
+  background-color: #ffffff; /* Contrast with Why Choose Us which is #f8fafd */
+  position: relative;
+}
+
+.container {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+/* ══════════════════════════════
+   HEADER
+   ══════════════════════════════ */
+.header {
+  text-align: center;
+  margin-bottom: 4rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.35rem 1.15rem;
+  background: rgba(161, 42, 47, 0.08);
+  color: #a12a2f;
+  border-radius: 100px;
+  font-family: "Inter", sans-serif;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+}
+
+.title {
+  font-family: "Inter", sans-serif;
+  font-size: 3rem;
+  font-weight: 800;
+  color: #1e3a5f;
+  line-height: 1.2;
+  letter-spacing: -1px;
+  margin-bottom: 1.25rem;
+}
+
+.subtitle {
+  font-family: "Inter", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: #64748b;
+  line-height: 1.6;
+}
+
+/* ══════════════════════════════
+   MAGAZINE LAYOUT (Replaces Grid)
+   ══════════════════════════════ */
+.magazineLayout {
+  display: flex;
+  gap: 3rem;
+  align-items: stretch;
+}
+
+.featuredWrapper {
+  flex: 7; /* roughly 58% width */
+}
+
+.listWrapper {
+  flex: 5; /* roughly 42% width */
+  display: flex;
+  flex-direction: column;
+}
+
+.listHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding-bottom: 0.75rem;
+  border-bottom: 2px solid rgba(30, 58, 95, 0.08); /* Navy underline */
+}
+
+.listHeader h3 {
+  font-family: "Inter", sans-serif;
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #1e3a5f;
+  margin: 0;
+}
+
+.viewAllBtn {
+  font-family: "Inter", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #a12a2f;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.viewAllBtn:hover {
+  text-decoration: underline;
+  color: #7b1f23;
+}
+
+.listContainer {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  flex-grow: 1;
+}
+
+/* ══════════════════════════════
+   SHARED CARD
+   ══════════════════════════════ */
+.card {
+  background: #ffffff;
+  border-radius: 16px;
+  box-shadow: 0 4px 20px rgba(30, 58, 95, 0.04), 0 1px 3px rgba(30, 58, 95, 0.02);
+  border: 1px solid rgba(30, 58, 95, 0.06);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease, border-color 0.4s ease;
+  overflow: hidden;
+  display: flex;
+  position: relative;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 30px rgba(30, 58, 95, 0.08), 0 1px 3px rgba(30, 58, 95, 0.02);
+  border-color: rgba(161, 42, 47, 0.15); /* Soft red hover tie-in */
+}
+
+.imageWrapper {
+  position: relative;
+  overflow: hidden;
+  flex-shrink: 0;
+}
+
+.imagePlaceholder {
+  width: 100%;
+  height: 100%;
+  transition: transform 0.6s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.card:hover .imagePlaceholder {
+  transform: scale(1.05);
+}
+
+.meta {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 0.85rem;
+}
+
+.date {
+  font-family: "Inter", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: #a12a2f;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.category {
+  font-family: "Inter", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 500;
+  color: #64748b;
+  background: rgba(30, 58, 95, 0.06);
+  padding: 0.2rem 0.5rem;
+  border-radius: 4px;
+}
+
+.readMoreBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 0.875rem;
+  color: #1e3a5f;
+  background: transparent;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  transition: color 0.3s ease;
+  align-self: flex-start;
+  margin-top: auto;
+}
+
+.readMoreBtn:hover {
+  color: #a12a2f;
+}
+
+.btnIcon {
+  transition: transform 0.3s cubicbezier(0.16, 1, 0.3, 1);
+  color: inherit;
+}
+
+.readMoreBtn:hover .btnIcon {
+  transform: translateX(4px);
+}
+
+/* ══════════════════════════════
+   FEATURED CARD (Large Left)
+   ══════════════════════════════ */
+.featuredCard {
+  flex-direction: column;
+  height: 100%;
+}
+
+.featuredCard .imageWrapper {
+  width: 100%;
+  height: 380px; /* Big hero image */
+}
+
+.featuredCard .content {
+  padding: 2.5rem;
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+}
+
+.featuredCard .cardTitle {
+  font-family: "Inter", sans-serif;
+  font-weight: 800;
+  color: #1e3a5f;
+  font-size: 1.75rem;
+  line-height: 1.3;
+  letter-spacing: -0.5px;
+  margin-bottom: 1rem;
+}
+
+.featuredCard .cardDescription {
+  font-family: "Inter", sans-serif;
+  font-size: 1.0625rem;
+  color: #64748b;
+  line-height: 1.6;
+  margin-bottom: 2rem;
+}
+
+/* ══════════════════════════════
+   STANDARD CARD (Horizontal Right)
+   ══════════════════════════════ */
+.standardCard {
+  flex-direction: row; /* Horizontal layout */
+  padding: 0;
+  height: 100%;
+}
+
+.standardCard .imageWrapper {
+  width: 140px; /* Square thumbnail */
+  background: #f1f5f9;
+}
+
+.standardCard .content {
+  padding: 1.25rem 1.5rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+}
+
+.standardCard .cardTitle {
+  font-family: "Inter", sans-serif;
+  font-weight: 700;
+  color: #1e3a5f;
+  font-size: 1.125rem;
+  line-height: 1.3;
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.2px;
+}
+
+.standardCard .cardDescription {
+  /* Smaller description, line-clamped if needed */
+  font-family: "Inter", sans-serif;
+  font-size: 0.875rem;
+  color: #64748b;
+  line-height: 1.5;
+  margin-bottom: 1rem;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+.standardCard .readMoreBtn {
+  font-size: 0.8125rem; /* Slightly smaller button for list */
+}
+
+/* ══════════════════════════════
+   RESPONSIVE
+   ══════════════════════════════ */
+@media (max-width: 1024px) {
+  .magazineLayout {
+    flex-direction: column;
+    gap: 4rem;
+  }
+  
+  .featuredCard .imageWrapper {
+    height: 300px;
+  }
+  
+  .standardCard .imageWrapper {
+    width: 180px; /* Slightly wider thumbnail when full width */
+  }
+}
+
+@media (max-width: 600px) {
+  .section {
+    padding: 4rem 1.5rem;
+  }
+  
+  .title {
+    font-size: 2.25rem;
+  }
+  
+  .featuredCard .imageWrapper {
+    height: 220px;
+  }
+  
+  .featuredCard .content {
+    padding: 1.75rem;
+  }
+  
+  .standardCard {
+    flex-direction: column; /* Stack horizontal cards to vertical on mobile */
+  }
+  
+  .standardCard .imageWrapper {
+    width: 100%;
+    height: 200px;
+  }
+  
+  .standardCard .cardDescription {
+    -webkit-line-clamp: 3;
+  }
+}
+
+/* ══════════════════════════════
+   REDUCED MOTION
+   ══════════════════════════════ */
+@media (prefers-reduced-motion: reduce) {
+  .card, .imagePlaceholder, .readMoreBtn, .btnIcon, .viewAllBtn {
+    transition: none !important;
+  }
+  
+  .card:hover {
+    transform: none;
+  }
+  
+  .card:hover .imagePlaceholder {
+    transform: none;
+  }
+}
