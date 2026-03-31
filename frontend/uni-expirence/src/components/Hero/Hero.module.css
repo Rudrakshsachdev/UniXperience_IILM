@@ -12,72 +12,7 @@
   min-height: calc(100vh - 72px);
   display: flex;
   align-items: center;
-  background: linear-gradient(170deg, #1e3a5f 0%, #152c48 45%, #0e1f35 100%);
-  padding: 4.5rem 2rem;
   overflow: hidden;
-}
-
-/* ══════════════════════════════
-   BACKGROUND EFFECTS
-   ══════════════════════════════ */
-
-/* Subtle dot grid pattern */
-.bgPattern {
-  position: absolute;
-  inset: 0;
-  opacity: 0.03;
-  background-image: radial-gradient(circle, #ffffff 1px, transparent 1px);
-  background-size: 32px 32px;
-  pointer-events: none;
-  z-index: 0;
-}
-
-/* Top-right red glow */
-.glowTopRight {
-  position: absolute;
-  top: -180px;
-  right: -120px;
-  width: 550px;
-  height: 550px;
-  border-radius: 50%;
-  background: radial-gradient(
-    circle,
-    rgba(161, 42, 47, 0.12) 0%,
-    rgba(161, 42, 47, 0.04) 45%,
-    transparent 70%
-  );
-  pointer-events: none;
-  z-index: 0;
-  animation: glowShift 7s ease-in-out infinite alternate;
-}
-
-/* Bottom-left soft glow */
-.glowBottomLeft {
-  position: absolute;
-  bottom: -200px;
-  left: -150px;
-  width: 500px;
-  height: 500px;
-  border-radius: 50%;
-  background: radial-gradient(
-    circle,
-    rgba(255, 255, 255, 0.04) 0%,
-    transparent 65%
-  );
-  pointer-events: none;
-  z-index: 0;
-  animation: glowShift 9s ease-in-out 3s infinite alternate;
-}
-
-@keyframes glowShift {
-  0% {
-    opacity: 0.7;
-    transform: translate(0, 0) scale(1);
-  }
-  100% {
-    opacity: 1;
-    transform: translate(15px, -10px) scale(1.08);
-  }
 }
 
 /* ══════════════════════════════
@@ -87,13 +22,13 @@
   width: 100%;
   max-width: 1400px;
   margin: 0 auto;
-  padding: 0 1rem;
+  padding: 4.5rem 3rem;
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
   gap: 4rem;
   position: relative;
-  z-index: 2;
+  z-index: 5;
 }
 
 /* ══════════════════════════════
@@ -338,7 +273,7 @@
   border-radius: 16px;
   overflow: hidden;
   box-shadow:
-    0 8px 40px rgba(0, 0, 0, 0.25),
+    0 8px 40px rgba(0, 0, 0, 0.3),
     0 0 0 1px rgba(255, 255, 255, 0.06);
 }
 
@@ -352,7 +287,7 @@
   transform: scale(1.05);
 }
 
-/* Decorative corner frame accent */
+/* Bottom gradient fade on image */
 .imageFrame {
   position: absolute;
   inset: 0;
@@ -367,7 +302,7 @@
   );
 }
 
-/* ── Floating Accreditation Card ── */
+/* ── Floating Card ── */
 .floatingCard {
   position: absolute;
   bottom: -16px;
@@ -381,7 +316,7 @@
   -webkit-backdrop-filter: blur(16px);
   border-radius: 12px;
   box-shadow:
-    0 8px 30px rgba(0, 0, 0, 0.12),
+    0 8px 30px rgba(0, 0, 0, 0.15),
     0 0 0 1px rgba(0, 0, 0, 0.04);
   z-index: 5;
   animation: floatCard 4s ease-in-out infinite;
@@ -435,6 +370,7 @@
 @media (max-width: 1100px) {
   .container {
     gap: 3rem;
+    padding: 4rem 2rem;
   }
 
   .heading {
@@ -445,7 +381,6 @@
 
 @media (max-width: 900px) {
   .hero {
-    padding: 3.5rem 1.5rem;
     min-height: auto;
   }
 
@@ -453,6 +388,7 @@
     grid-template-columns: 1fr;
     gap: 3rem;
     text-align: center;
+    padding: 3.5rem 1.5rem;
   }
 
   .textCol {
@@ -493,7 +429,7 @@
 }
 
 @media (max-width: 600px) {
-  .hero {
+  .container {
     padding: 2.5rem 1.25rem;
   }
 
@@ -537,16 +473,6 @@
     font-size: 0.75rem;
   }
 
-  .glowTopRight {
-    width: 300px;
-    height: 300px;
-  }
-
-  .glowBottomLeft {
-    width: 250px;
-    height: 250px;
-  }
-
   .floatingCard {
     padding: 0.7rem 1rem;
     bottom: -10px;
@@ -582,8 +508,6 @@
     transform: none;
   }
 
-  .glowTopRight,
-  .glowBottomLeft,
   .badgeDot,
   .floatingCard {
     animation: none !important;
