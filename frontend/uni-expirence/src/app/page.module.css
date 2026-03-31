@@ -1,0 +1,33 @@
+/* ── Hero placeholder ── */
+.hero {
+  min-height: calc(100vh - 64px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 60px 32px;
+  background: linear-gradient(160deg, #f0f4f8 0%, #e8edf3 50%, #dce3ec 100%);
+}
+
+.heroContent {
+  max-width: 640px;
+  text-align: center;
+}
+
+.title {
+  font-size: clamp(28px, 4vw, 44px);
+  font-weight: 700;
+  color: #1e3a5f;
+  line-height: 1.2;
+  margin-bottom: 18px;
+}
+
+.accent {
+  color: #a12a2f;
+}
+
+.subtitle {
+  font-size: clamp(15px, 1.8vw, 18px);
+  color: #4a5568;
+  line-height: 1.7;
+  font-weight: 400;
+}
