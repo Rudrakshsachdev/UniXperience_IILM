@@ -67,6 +67,7 @@ export default function Navbar() {
             width={140}
             height={44}
             className={styles.logoImage}
+            style={{ width: "auto", height: "auto" }}
             priority
           />
           <span className={styles.logoSeparator} aria-hidden="true">
