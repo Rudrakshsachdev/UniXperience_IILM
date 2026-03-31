@@ -1,15 +1,25 @@
+"use client";
+
 import Image from "next/image";
 import styles from "./Hero.module.css";
 import heroBg from "../../public/IILM_Front.jpg";
+import LightWavesBackground from "../LightWavesBackground/LightWavesBackground";
+
+const WAVE_COLORS = ["#1e3a5f", "#a12a2f", "#2a5a8f", "#8b1f24", "#1a2d47"];
+const BG_COLORS = ["#0c1929", "#132840", "#0c1929"];
 
 export default function Hero() {
   return (
     <section className={styles.hero}>
-      {/* Subtle background effects */}
-      <div className={styles.bgPattern} aria-hidden="true" />
-      <div className={styles.glowTopRight} aria-hidden="true" />
-      <div className={styles.glowBottomLeft} aria-hidden="true" />
+      {/* Animated wave canvas background */}
+      <LightWavesBackground
+        colors={WAVE_COLORS}
+        bgColors={BG_COLORS}
+        speed={0.7}
+        intensity={0.5}
+      />
 
+      {/* Content — sits above the canvas */}
       <div className={styles.container}>
         {/* ── Left: Text Content ── */}
         <div className={styles.textCol}>
@@ -81,7 +91,6 @@ export default function Hero() {
               className={styles.campusImage}
               sizes="(max-width: 900px) 100vw, 50vw"
             />
-            {/* Accent border frame */}
             <div className={styles.imageFrame} aria-hidden="true" />
           </div>
 
