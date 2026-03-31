@@ -1,0 +1,278 @@
+/* ─────────────────────────────────────────────
+   IILM UniXperience — Why Choose Us
+   Matches Navbar Design System
+   Palette: Navy #1E3A5F · White · Accent #A12A2F
+   ───────────────────────────────────────────── */
+
+/* ══════════════════════════════
+   SECTION
+   ══════════════════════════════ */
+/* ══════════════════════════════
+   SECTION
+   ══════════════════════════════ */
+.section {
+  padding: 7rem 2rem;
+  background-color: #f8fafd;
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+/* ══════════════════════════════
+   DECORATIVE BACKGROUNDS
+   ══════════════════════════════ */
+.decorLeft {
+  position: absolute;
+  top: -150px;
+  left: -150px;
+  width: 500px;
+  height: 500px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(161, 42, 47, 0.04) 0%, transparent 60%);
+  z-index: -1;
+  pointer-events: none;
+}
+
+.decorRight {
+  position: absolute;
+  bottom: -200px;
+  right: -100px;
+  width: 600px;
+  height: 600px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(30, 58, 95, 0.04) 0%, transparent 60%);
+  z-index: -1;
+  pointer-events: none;
+}
+
+.container {
+  width: 100%;
+  max-width: 1300px;
+  margin: 0 auto;
+}
+
+/* ══════════════════════════════
+   HEADER
+   ══════════════════════════════ */
+.header {
+  text-align: center;
+  margin-bottom: 4.5rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.badge {
+  display: inline-block;
+  padding: 0.35rem 1.15rem;
+  background: rgba(161, 42, 47, 0.08); /* Soft red accent background */
+  color: #a12a2f; /* Red accent */
+  border-radius: 100px;
+  font-family: "Inter", sans-serif;
+  font-size: 0.8125rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  margin-bottom: 1.25rem;
+}
+
+.title {
+  font-family: "Inter", sans-serif;
+  font-size: 3rem;
+  font-weight: 800;
+  color: #1e3a5f; /* Deep navy blue */
+  line-height: 1.2;
+  letter-spacing: -1px;
+  margin-bottom: 1.25rem;
+  position: relative;
+}
+
+.subtitle {
+  font-family: "Inter", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 400;
+  color: #64748b; /* Slate grey for readability */
+  line-height: 1.6;
+}
+
+/* ══════════════════════════════
+   GRID
+   ══════════════════════════════ */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2.5rem;
+}
+
+/* ══════════════════════════════
+   CARD
+   ══════════════════════════════ */
+.card {
+  background: #ffffff;
+  border-radius: 20px;
+  padding: 2.5rem 2.25rem;
+  box-shadow: 0 4px 20px rgba(30, 58, 95, 0.04), 0 1px 3px rgba(30, 58, 95, 0.02);
+  border: 1px solid rgba(30, 58, 95, 0.06);
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100%;
+  position: relative;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(30, 58, 95, 0.08), 0 1px 3px rgba(30, 58, 95, 0.02);
+  border-color: rgba(161, 42, 47, 0.2); /* Subtle red tie-in on hover */
+}
+
+/* Card highlight edge on hover */
+.card::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #1e3a5f, #a12a2f);
+  opacity: 0;
+  transition: opacity 0.4s ease;
+}
+
+.card:hover::before {
+  opacity: 1;
+}
+
+/* Card Icon Box */
+.iconBox {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 64px;
+  height: 64px;
+  border-radius: 16px;
+  background: linear-gradient(135deg, #1e3a5f 0%, #2a5286 100%);
+  color: #ffffff;
+  margin-bottom: 2rem;
+  transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s ease;
+  box-shadow: 0 4px 15px rgba(30, 58, 95, 0.15);
+}
+
+.card:hover .iconBox {
+  transform: scale(1.08) rotate(-4deg);
+  box-shadow: 0 8px 25px rgba(30, 58, 95, 0.25);
+}
+
+/* Card Typography */
+.cardTitle {
+  font-family: "Inter", sans-serif;
+  font-size: 1.35rem;
+  font-weight: 700;
+  color: #1e3a5f;
+  margin-bottom: 1rem;
+  line-height: 1.3;
+  letter-spacing: -0.3px;
+}
+
+.cardDescription {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  color: #64748b;
+  line-height: 1.6;
+  flex-grow: 1;
+}
+
+/* Card Footer & Button */
+.cardFooter {
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.learnMoreBtn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+  height: 42px;
+  padding: 0 1.25rem;
+  border-radius: 8px;
+  border: none;
+  background: transparent;
+  color: #0ea5e9;
+  font-family: "Inter", sans-serif;
+  font-weight: 600;
+  font-size: 0.9375rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  position: relative;
+  overflow: hidden;
+}
+
+.learnMoreBtn::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  border-radius: 8px;
+  background: #0ea5e9;
+  opacity: 0.08;
+  transition: opacity 0.3s ease;
+}
+
+.learnMoreBtn:hover::before {
+  opacity: 0.15;
+}
+
+.btnIcon {
+  transition: transform 0.3s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.learnMoreBtn:hover .btnIcon {
+  transform: translateX(4px);
+}
+
+/* ══════════════════════════════
+   RESPONSIVE
+   ══════════════════════════════ */
+@media (max-width: 1024px) {
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .section {
+    padding: 4rem 1.5rem;
+  }
+  
+  .title {
+    font-size: 2.25rem;
+  }
+
+  .grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .card {
+    padding: 2rem 1.5rem;
+  }
+}
+
+/* ══════════════════════════════
+   REDUCED MOTION
+   ══════════════════════════════ */
+@media (prefers-reduced-motion: reduce) {
+  .card, .iconBox, .learnMoreBtn, .btnIcon, .card::before, .learnMoreBtn::before {
+    transition: none !important;
+  }
+  
+  .card:hover {
+    transform: none;
+  }
+  
+  .card:hover .iconBox {
+    transform: none;
+  }
+}
