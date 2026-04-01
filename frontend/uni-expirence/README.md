@@ -1,36 +1,55 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📱 UniXperience | The IILM University Portal
 
-## Getting Started
+Welcome to **UniXperience**, the modern digital face of IILM University. Built with Next.js 15, this frontend platform provides a premium, responsive, and intuitive interface for all campus users.
 
-First, run the development server:
+---
 
+## 🎨 User-First Design
+
+Our frontend is meticulously crafted to ensure a seamless experience:
+- **Glassmorphic UI**: Transparent, light-reflective elements for a sleek, modern look.
+- **Dynamic Interactions**: Subtle micro-animations and smooth transitions using CSS Modules.
+- **Micro-Services Integration**: Quick Access cards for schedules, syllabus, and directories.
+- **Mobile Optimized**: A fully responsive layout that looks great on any device.
+
+---
+
+## 🚀 Navigation Guide
+
+### 📍 Sections breakdown
+1. **Hero**: Your visual welcome with localized greetings.
+2. **Quick Access**: Your academic dashboard—click any card to view your timetable or directory.
+3. **Why Choose Us**: Explore the IILM advantage and academic resources.
+4. **News & Updates**: A grid-based magazine layout for the latest university news.
+
+---
+
+## 🛠️ Getting Started (Frontend)
+
+### Installation
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+npm install
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Development
+```bash
+npm run dev
+```
+Navigate to `http://localhost:3000` to interact with the portal.
 
-You can start editing the page by modifying `app/page.js`. The page auto-updates as you edit the file.
+### Build for Production
+```bash
+npm run build
+npm run start
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+---
 
-## Learn More
+## 🏗️ Architecture Highlights
 
-To learn more about Next.js, take a look at the following resources:
+- **Next.js 15 (App Router)**: Leverages Server Components and modern routing.
+- **CSS Modules**: Scoped, modular styling for high performance and zero style conflicts.
+- **Optimized Assets**: Next.js Image and Font optimization for fast load times.
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+---
+*For the full project overview (including Backend), please see the root [README.md](../../README.md).*
