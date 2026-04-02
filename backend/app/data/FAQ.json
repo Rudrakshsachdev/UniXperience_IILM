@@ -11,5 +11,53 @@
   {
     "question": "When are exams conducted?",
     "answer": "At the end of each semester."
+  },
+  {
+    "question": "How can I check my attendance?",
+    "answer": "You can check your attendance through the student portal."
+  },
+  {
+    "question": "How can I check my result?",
+    "answer": "You can check your result through the student portal."
+  },
+  {
+    "question": "Are medical leaves counted in attendance?",
+    "answer": "Medical leaves are counted in attendance."
+  },
+  {
+    "question": "Can attendance be improved later?",
+    "answer": "Yes, you can improve your attendance by attending extra classes or submitting assignments."
+  },
+  {
+    "question": "When are semester exams conducted?",
+    "answer": "Semester exams are conducted at the end of each semester."
+  },
+  {
+    "question": "How can I get my admit card?",
+    "answer": "You can get your admit card from the examination section."
+  },
+  {
+    "question": "What is a backlog?",
+    "answer": "A backlog is a pending paper or subject that a student has not cleared in the regular examination."
+  },
+  {
+    "question": "How can I clear my backlog?",
+    "answer": "You can clear your backlog by appearing for the supplementary examination conducted by the university."
+  },
+  {
+    "question": "What is the minimum passing percentage?",
+    "answer": "The minimum passing percentage is 40%."
+  },
+  {
+    "question": "What is an improvement exam?",
+    "answer": "An improvement exam is an exam conducted by the university for students who have not cleared a subject in the regular examination."
+  },
+  {
+    "question": "What is the result publication date?",
+    "answer": "The result publication date is 30th April."
+  },
+  {
+    "question": "How to register for courses?",
+    "answer": "You can register for courses through the student portal."
   }
 ]

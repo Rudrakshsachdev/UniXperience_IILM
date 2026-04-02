@@ -1,0 +1,12 @@
+[
+  {
+    "name": "Dr. Sharma",
+    "department": "Computer Science",
+    "email": "sharma@uni.edu"
+  },
+  {
+    "name": "Prof. Mehta",
+    "department": "Mathematics",
+    "email": "mehta@uni.edu"
+  }
+]
