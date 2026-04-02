@@ -1,8 +1,11 @@
 from fastapi import FastAPI, Depends
 from sqlalchemy.orm import Session
 from .core.database import get_db
+from .api.v1.endpoints import chat
+
 
 app = FastAPI()
+app.include_router(chat.router, prefix="/api/v1")
 
 @app.get("/")
 async def root():
