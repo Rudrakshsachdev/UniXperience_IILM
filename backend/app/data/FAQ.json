@@ -1,63 +1,638 @@
-
 [
   {
-    "question": "What is minimum attendance?",
-    "answer": "Students must maintain 75% attendance."
-  },
-  {
-    "question": "How to apply for leave?",
-    "answer": "Apply through student portal."
-  },
-  {
-    "question": "When are exams conducted?",
-    "answer": "At the end of each semester."
+    "question": "What is the minimum attendance required?",
+    "answer": "Students must maintain at least 75% attendance in each subject to be eligible for semester exams."
   },
   {
     "question": "How can I check my attendance?",
-    "answer": "You can check your attendance through the student portal."
+    "answer": "Attendance can be checked through the student portal or by contacting your subject teacher."
   },
   {
-    "question": "How can I check my result?",
-    "answer": "You can check your result through the student portal."
-  },
-  {
-    "question": "Are medical leaves counted in attendance?",
-    "answer": "Medical leaves are counted in attendance."
+    "question": "What happens if my attendance is low?",
+    "answer": "If attendance is below the required percentage, you may be detained from exams or required to complete additional assignments."
   },
   {
     "question": "Can attendance be improved later?",
-    "answer": "Yes, you can improve your attendance by attending extra classes or submitting assignments."
+    "answer": "In some cases, extra classes or assignments may help improve attendance, depending on university rules."
+  },
+  {
+    "question": "Are medical leaves counted in attendance?",
+    "answer": "Yes, valid medical leaves with proper documentation may be considered."
   },
   {
     "question": "When are semester exams conducted?",
-    "answer": "Semester exams are conducted at the end of each semester."
+    "answer": "Semester exams are conducted at the end of each semester as per the academic calendar."
   },
   {
-    "question": "How can I get my admit card?",
-    "answer": "You can get your admit card from the examination section."
+    "question": "What is the exam pattern?",
+    "answer": "The exam pattern usually includes internal assessments and final external exams."
+  },
+  {
+    "question": "What is the passing criteria?",
+    "answer": "Students must secure minimum passing marks in both internal and external components."
+  },
+  {
+    "question": "How is CGPA calculated?",
+    "answer": "CGPA is calculated based on grades earned in all subjects across semesters."
+  },
+  {
+    "question": "Can I apply for revaluation?",
+    "answer": "Yes, revaluation can be applied through the examination portal within the given deadline."
   },
   {
     "question": "What is a backlog?",
-    "answer": "A backlog is a pending paper or subject that a student has not cleared in the regular examination."
+    "answer": "A backlog is a subject that a student has failed and needs to clear in future attempts."
   },
   {
-    "question": "How can I clear my backlog?",
-    "answer": "You can clear your backlog by appearing for the supplementary examination conducted by the university."
-  },
-  {
-    "question": "What is the minimum passing percentage?",
-    "answer": "The minimum passing percentage is 40%."
+    "question": "Can I carry a backlog?",
+    "answer": "Yes, students can carry backlogs to the next semester but must clear them within allowed attempts."
   },
   {
     "question": "What is an improvement exam?",
-    "answer": "An improvement exam is an exam conducted by the university for students who have not cleared a subject in the regular examination."
+    "answer": "It allows students to improve their previously obtained marks."
   },
   {
-    "question": "What is the result publication date?",
-    "answer": "The result publication date is 30th April."
+    "question": "How many attempts are allowed?",
+    "answer": "The number of attempts depends on university regulations."
+  },
+  {
+    "question": "Will backlog affect placements?",
+    "answer": "Yes, many companies require students to have no active backlogs."
+  },
+  {
+    "question": "What are credit points?",
+    "answer": "Credits represent the importance and workload of a subject."
   },
   {
     "question": "How to register for courses?",
-    "answer": "You can register for courses through the student portal."
+    "answer": "Course registration is done through the student portal before the semester starts."
+  },
+  {
+    "question": "What is an elective subject?",
+    "answer": "An elective is a subject chosen by the student based on interest."
+  },
+  {
+    "question": "Can I change my electives?",
+    "answer": "Changes may be allowed within a limited time after registration."
+  },
+  {
+    "question": "What is the semester system?",
+    "answer": "The academic year is divided into two semesters with separate evaluations."
+  },
+  {
+    "question": "How can I contact faculty?",
+    "answer": "Faculty can be contacted via email or during designated office hours."
+  },
+  {
+    "question": "What is a mentorship program?",
+    "answer": "It is a system where faculty guide students academically and personally."
+  },
+  {
+    "question": "Who is the HOD?",
+    "answer": "The Head of Department manages academic activities of the department."
+  },
+  {
+    "question": "How to resolve academic doubts?",
+    "answer": "Students can approach faculty or mentors for clarification."
+  },
+  {
+    "question": "Can I meet faculty outside class?",
+    "answer": "Yes, during office hours or with prior appointment."
+  },
+  {
+    "question": "Is internship mandatory?",
+    "answer": "Yes, internships are usually mandatory for B.Tech students."
+  },
+  {
+    "question": "When should I start internship?",
+    "answer": "Students typically start internships from the second or third year."
+  },
+  {
+    "question": "How to apply for internships?",
+    "answer": "Apply through the placement cell or online platforms."
+  },
+  {
+    "question": "What is placement cell?",
+    "answer": "It is responsible for organizing job opportunities for students."
+  },
+  {
+    "question": "When do placements start?",
+    "answer": "Placements generally begin in the final year."
+  },
+  {
+    "question": "Are labs compulsory?",
+    "answer": "Yes, lab sessions are mandatory and contribute to final grades."
+  },
+  {
+    "question": "What is final year project?",
+    "answer": "It is a major project demonstrating practical knowledge."
+  },
+  {
+    "question": "How to choose project topic?",
+    "answer": "Choose based on your interest and career goals."
+  },
+  {
+    "question": "Can projects be done in groups?",
+    "answer": "Yes, most projects are done in groups."
+  },
+  {
+    "question": "Is project evaluation important?",
+    "answer": "Yes, it significantly affects final grades."
+  },
+  {
+    "question": "How to access library?",
+    "answer": "Library access is provided through student ID."
+  },
+  {
+    "question": "Can I issue books?",
+    "answer": "Yes, books can be issued for a limited duration."
+  },
+  {
+    "question": "Is WiFi available on campus?",
+    "answer": "Yes, students can access campus WiFi using login credentials."
+  },
+  {
+    "question": "How to get WiFi login?",
+    "answer": "Credentials are provided by the IT department."
+  },
+  {
+    "question": "Are computer labs available?",
+    "answer": "Yes, labs are available for academic use."
+  },
+  {
+    "question": "Is hostel facility available?",
+    "answer": "Yes, hostels are available for students."
+  },
+  {
+    "question": "How to apply for hostel?",
+    "answer": "Apply through hostel administration office."
+  },
+  {
+    "question": "Are extracurricular activities available?",
+    "answer": "Yes, students can join clubs and activities."
+  },
+  {
+    "question": "What clubs are available?",
+    "answer": "Technical, cultural, and sports clubs are available."
+  },
+  {
+    "question": "Are sports facilities provided?",
+    "answer": "Yes, various sports facilities are available."
+  },
+  {
+    "question": "How to pay fees?",
+    "answer": "Fees can be paid through the student portal online."
+  },
+  {
+    "question": "Are scholarships available?",
+    "answer": "Yes, scholarships are available based on eligibility."
+  },
+  {
+    "question": "How to apply for scholarship?",
+    "answer": "Apply through government or university portal."
+  },
+  {
+    "question": "What is fee refund policy?",
+    "answer": "Refunds follow university guidelines."
+  },
+  {
+    "question": "Is installment payment allowed?",
+    "answer": "It depends on university policy."
+  },
+  {
+    "question": "How to download admit card?",
+    "answer": "Admit cards are available on the student portal."
+  },
+  {
+    "question": "What to carry in exams?",
+    "answer": "Carry ID card and admit card."
+  },
+  {
+    "question": "What is malpractice?",
+    "answer": "Using unfair means during exams."
+  },
+  {
+    "question": "What happens in malpractice?",
+    "answer": "Strict disciplinary action is taken."
+  },
+  {
+    "question": "How to get degree certificate?",
+    "answer": "It is issued after course completion."
+  },
+  {
+    "question": "How to improve coding skills?",
+    "answer": "Practice regularly on coding platforms."
+  },
+  {
+    "question": "What is hackathon?",
+    "answer": "An event where students build projects in limited time."
+  },
+  {
+    "question": "Are hackathons useful?",
+    "answer": "Yes, they enhance skills and teamwork."
+  },
+  {
+    "question": "What platforms to use for coding?",
+    "answer": "LeetCode, CodeChef, and HackerRank."
+  },
+  {
+    "question": "How to prepare for placements?",
+    "answer": "Focus on coding, aptitude, and communication skills."
+  },
+  {
+    "question": "What is an elective subject?",
+    "answer": "An elective is an optional subject that students choose based on their interests and career goals."
+  },
+  {
+    "question": "How to select electives?",
+    "answer": "Students should choose electives based on their domain interest, future career plans, and faculty guidance."
+  },
+  {
+    "question": "Can I change my elective after selection?",
+    "answer": "Changes may be allowed within a limited time window after course registration."
+  },
+  {
+    "question": "What is an open elective?",
+    "answer": "An open elective is a subject offered by another department that students can choose."
+  },
+  {
+    "question": "What is a professional elective?",
+    "answer": "A professional elective is related to your core branch and enhances technical knowledge."
+  },
+  {
+    "question": "What is AI/ML specialization?",
+    "answer": "It focuses on artificial intelligence, machine learning, and data-driven technologies."
+  },
+  {
+    "question": "What is Data Science specialization?",
+    "answer": "It involves analyzing data using statistics, programming, and machine learning."
+  },
+  {
+    "question": "Are specializations important?",
+    "answer": "Yes, they help students build expertise in a specific domain."
+  },
+  {
+    "question": "Can I switch specialization?",
+    "answer": "It depends on university rules and availability."
+  },
+  {
+    "question": "Do specializations affect placements?",
+    "answer": "Yes, companies often prefer candidates with relevant specialization skills."
+  },
+  {
+    "question": "What is a research paper?",
+    "answer": "A document that presents original research work and findings."
+  },
+  {
+    "question": "Can undergraduate students publish papers?",
+    "answer": "Yes, students can publish papers with proper guidance from faculty."
+  },
+  {
+    "question": "How to start research work?",
+    "answer": "Start by identifying a problem and working with a faculty mentor."
+  },
+  {
+    "question": "Are research papers important for career?",
+    "answer": "Yes, they help in higher studies and research-based roles."
+  },
+  {
+    "question": "What is innovation lab?",
+    "answer": "A space where students work on new ideas, projects, and prototypes."
+  },
+  {
+    "question": "What is industrial visit?",
+    "answer": "A visit to industries to understand real-world working environments."
+  },
+  {
+    "question": "Is industrial visit compulsory?",
+    "answer": "It depends on the curriculum but is usually encouraged."
+  },
+  {
+    "question": "What is industry training?",
+    "answer": "Training provided by companies to give practical exposure."
+  },
+  {
+    "question": "How to get industry exposure?",
+    "answer": "Through internships, workshops, and industrial visits."
+  },
+  {
+    "question": "Why is practical exposure important?",
+    "answer": "It helps students understand real-world applications of their studies."
+  },
+  {
+    "question": "What is academic calendar?",
+    "answer": "It includes important dates like semester start, exams, and holidays."
+  },
+  {
+    "question": "Where can I find the timetable?",
+    "answer": "Timetable is available on the student portal or department notice board."
+  },
+  {
+    "question": "What is semester break?",
+    "answer": "A break between two semesters for rest or internships."
+  },
+  {
+    "question": "What are working days in a semester?",
+    "answer": "Usually around 90 working days depending on university rules."
+  },
+  {
+    "question": "Can timetable change during semester?",
+    "answer": "Yes, changes may occur due to unforeseen circumstances."
+  },
+  {
+    "question": "What is anti-ragging policy?",
+    "answer": "Strict rules to prevent ragging and ensure student safety."
+  },
+  {
+    "question": "What should I do if ragging occurs?",
+    "answer": "Report immediately to authorities or anti-ragging committee."
+  },
+  {
+    "question": "What is disciplinary action?",
+    "answer": "Action taken against students for violating rules."
+  },
+  {
+    "question": "Are mobile phones allowed in class?",
+    "answer": "Usually not allowed unless permitted by faculty."
+  },
+  {
+    "question": "What are exam rules?",
+    "answer": "Students must follow guidelines like no cheating and proper conduct."
+  },
+  {
+    "question": "How to get transcripts?",
+    "answer": "Apply through the university administration or exam cell."
+  },
+  {
+    "question": "What is migration certificate?",
+    "answer": "A document required when changing universities."
+  },
+  {
+    "question": "How to update personal details?",
+    "answer": "Update through student portal or administration office."
+  },
+  {
+    "question": "What is bonafide certificate?",
+    "answer": "A certificate proving that you are a student of the institution."
+  },
+  {
+    "question": "How to apply for bonafide certificate?",
+    "answer": "Apply through the administration office or online portal."
+  },
+  {
+    "question": "What are career options after B.Tech?",
+    "answer": "Options include jobs, higher studies, startups, or government exams."
+  },
+  {
+    "question": "What is higher education after B.Tech?",
+    "answer": "Students can pursue M.Tech, MBA, or other postgraduate programs."
+  },
+  {
+    "question": "What is campus placement?",
+    "answer": "Recruitment process conducted within the campus by companies."
+  },
+  {
+    "question": "Can I start a startup after B.Tech?",
+    "answer": "Yes, many students start startups using their technical knowledge."
+  },
+  {
+    "question": "How to build a strong resume?",
+    "answer": "Include projects, internships, skills, and achievements."
+  },
+  {
+    "question": "When was the university established?",
+    "answer": "The university was established in 1993 and has over 30 years of academic excellence."
+  },
+  {
+    "question": "Where are the university campuses located?",
+    "answer": "The university has campuses in Gurugram, Greater Noida, and New Delhi."
+  },
+  {
+    "question": "What type of university is this?",
+    "answer": "It is a private university offering undergraduate, postgraduate, and doctoral programs."
+  },
+  {
+    "question": "What makes the university unique?",
+    "answer": "The university focuses on practical learning, innovation, and industry-relevant education."
+  },
+  {
+    "question": "Does the university have global exposure?",
+    "answer": "Yes, it offers international collaborations and study abroad programs."
+  },
+  {
+    "question": "What programs are offered in engineering?",
+    "answer": "The university offers B.Tech and M.Tech programs in various engineering disciplines."
+  },
+  {
+    "question": "Does the university offer computer science courses?",
+    "answer": "Yes, it offers B.Tech, BCA, M.Tech, and MCA in computer science."
+  },
+  {
+    "question": "Are postgraduate programs available?",
+    "answer": "Yes, postgraduate programs are offered across multiple disciplines."
+  },
+  {
+    "question": "Does the university offer PhD programs?",
+    "answer": "Yes, doctoral programs are available in various fields."
+  },
+  {
+    "question": "How many programs are available?",
+    "answer": "The university offers more than 25–40 programs across disciplines."
+  },
+  {
+    "question": "What is the qualification of faculty members?",
+    "answer": "Faculty members hold PhDs and have strong academic and industry experience."
+  },
+  {
+    "question": "Do faculty members have industry experience?",
+    "answer": "Yes, many faculty members are industry practitioners and researchers."
+  },
+  {
+    "question": "What teaching methods are used?",
+    "answer": "Teaching includes case studies, simulations, presentations, and real-world projects."
+  },
+  {
+    "question": "Is mentoring provided by faculty?",
+    "answer": "Yes, personalized mentoring is provided to guide students academically and professionally."
+  },
+  {
+    "question": "Do faculty members participate in research?",
+    "answer": "Yes, they actively engage in research, consultancy, and training programs."
+  },
+  {
+    "question": "Does the university support research?",
+    "answer": "Yes, it promotes research through projects, publications, and innovation centers."
+  },
+  {
+    "question": "How many research papers are published?",
+    "answer": "The university has published over 300+ research papers."
+  },
+  {
+    "question": "Are patents filed by the university?",
+    "answer": "Yes, the university has multiple registered patents."
+  },
+  {
+    "question": "Are research centers available?",
+    "answer": "Yes, specialized research centers are established for innovation."
+  },
+  {
+    "question": "Can students participate in research?",
+    "answer": "Yes, students can collaborate with faculty on research projects."
+  },
+  {
+    "question": "Does the university have international collaborations?",
+    "answer": "Yes, it collaborates with universities in countries like the UK, USA, and Canada."
+  },
+  {
+    "question": "Are student exchange programs available?",
+    "answer": "Yes, students can participate in exchange programs abroad."
+  },
+  {
+    "question": "What is Global Connect program?",
+    "answer": "It is a program that provides international exposure and learning opportunities."
+  },
+  {
+    "question": "Can students study abroad?",
+    "answer": "Yes, students can opt for international study programs."
+  },
+  {
+    "question": "Does global exposure help in placements?",
+    "answer": "Yes, it improves skills and enhances career opportunities."
+  },
+  {
+    "question": "What facilities are available on campus?",
+    "answer": "The campus includes modern labs, libraries, hostels, and sports facilities."
+  },
+  {
+    "question": "Is the campus WiFi enabled?",
+    "answer": "Yes, students have access to WiFi across campus."
+  },
+  {
+    "question": "Are hostel facilities available?",
+    "answer": "Yes, hostels are available for students."
+  },
+  {
+    "question": "Is campus safe for students?",
+    "answer": "Yes, the campus is secure and well-maintained."
+  },
+  {
+    "question": "Are food facilities available?",
+    "answer": "Yes, cafeterias and food services are available."
+  },
+  {
+    "question": "Does the university provide placements?",
+    "answer": "Yes, placement support is provided to students."
+  },
+  {
+    "question": "Which companies visit for placements?",
+    "answer": "Many reputed companies visit for campus recruitment."
+  },
+  {
+    "question": "Is there a placement cell?",
+    "answer": "Yes, a dedicated placement cell manages recruitment activities."
+  },
+  {
+    "question": "What skills are required for placements?",
+    "answer": "Technical knowledge, communication, and problem-solving skills are essential."
+  },
+  {
+    "question": "Are internships supported by the university?",
+    "answer": "Yes, students are encouraged to take internships for practical exposure."
+  },
+  {
+    "question": "What is campus life like?",
+    "answer": "Campus life is vibrant with academic, cultural, and social activities."
+  },
+  {
+    "question": "Are clubs available for students?",
+    "answer": "Yes, students can join various clubs and societies."
+  },
+  {
+    "question": "What extracurricular activities are available?",
+    "answer": "Activities include sports, cultural events, and technical competitions."
+  },
+  {
+    "question": "Is there a student support system?",
+    "answer": "Yes, support services are available for student well-being."
+  },
+  {
+    "question": "Are alumni connections strong?",
+    "answer": "Yes, the university has a strong alumni network of over 16,000 members."
+  },
+  {
+    "question": "How to contact the university?",
+    "answer": "Students can contact via official email or helpline numbers."
+  },
+  {
+    "question": "Is there an online student portal?",
+    "answer": "Yes, students can access LMS and ERP systems."
+  },
+  {
+    "question": "Where to check notices and updates?",
+    "answer": "Notices are available on the official website and portal."
+  },
+  {
+    "question": "Is there a grievance system?",
+    "answer": "Yes, students can raise complaints through grievance portals."
+  },
+  {
+    "question": "How to apply for admission?",
+    "answer": "Students can apply online through the university admission portal."
+  },
+  {
+    "question": "What type of classrooms are available?",
+    "answer": "Classrooms are modern, well-equipped with smart boards, projectors, and comfortable seating."
+  },
+  {
+    "question": "Are smart classrooms available?",
+    "answer": "Yes, smart classrooms with digital teaching tools are available for interactive learning."
+  },
+  {
+    "question": "Does the campus have air-conditioned classrooms?",
+    "answer": "Many classrooms are air-conditioned for a comfortable learning environment."
+  },
+  {
+    "question": "Is there a central library?",
+    "answer": "Yes, the campus has a central library with a large collection of books and digital resources."
+  },
+  {
+    "question": "Are digital library resources available?",
+    "answer": "Yes, students can access e-books, journals, and research databases online."
+  },
+  {
+    "question": "What type of classrooms are available?",
+    "answer": "Classrooms are modern, well-equipped with smart boards, projectors, and comfortable seating."
+  },
+  {
+    "question": "Are smart classrooms available?",
+    "answer": "Yes, smart classrooms with digital teaching tools are available for interactive learning."
+  },
+  {
+    "question": "Does the campus have air-conditioned classrooms?",
+    "answer": "Many classrooms are air-conditioned for a comfortable learning environment."
+  },
+  {
+    "question": "Is there a central library?",
+    "answer": "Yes, the campus has a central library with a large collection of books and digital resources."
+  },
+  {
+    "question": "Are digital library resources available?",
+    "answer": "Yes, students can access e-books, journals, and research databases online."
+  },
+  {
+    "question": "Is high-speed internet available?",
+    "answer": "Yes, high-speed internet is available across campus."
+  },
+  {
+    "question": "Are there computer centers for students?",
+    "answer": "Yes, dedicated computer centers are available for academic use."
+  },
+  {
+    "question": "Is technical support available on campus?",
+    "answer": "Yes, IT support teams assist students with technical issues."
+  },
+  {
+    "question": "Can students use personal laptops on campus WiFi?",
+    "answer": "Yes, students can connect personal devices to campus WiFi."
   }
 ]
