@@ -9,6 +9,17 @@ client = genai.Client(api_key=settings.GEMINI_API_KEY)
 MODEL_NAME = "gemini-flash-lite-latest"
 
 def generate_response(user_query: str) -> str:
+
+    """
+    This function generates a response to the user's query using the Gemini Flash Lite model. It first retrieves relevant context using the RAG service, then constructs a prompt that guides the model to synthesize an answer based solely on the provided context. If the context does not contain the answer, the model is instructed to politely inform the user that the information is not available. The function handles any exceptions that may occur during the process and returns an appropriate error message.
+
+    arguments:
+    user_query (str): The question or query posed by the user.
+
+    returns:
+    str: The generated response from the model, or an error message if an exception occurs.
+    """
+
     try:
         # 🔍 Retrieve context (RAG)
         context = retrieve_context(user_query)
@@ -33,7 +44,7 @@ Guidelines:
 {user_query}
 """
 
-        # 🔥 New SDK call
+        # 🔥 New SDK call, SDK calls are now more streamlined and efficient
         response = client.models.generate_content(
             model=MODEL_NAME,
             contents=prompt
