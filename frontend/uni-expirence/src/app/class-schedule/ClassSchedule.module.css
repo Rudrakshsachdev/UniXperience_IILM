@@ -28,6 +28,46 @@
   font-size: 1.1rem;
 }
 
+/* Filters */
+.filtersContainer {
+  display: flex;
+  justify-content: center;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+
+.filterGroup {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.filterGroup label {
+  font-weight: 600;
+  color: #475569;
+  font-size: 0.95rem;
+}
+
+.filterSelect {
+  padding: 0.5rem 1rem;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  background-color: white;
+  color: var(--primary, #1E3A5F);
+  font-weight: 500;
+  font-size: 0.95rem;
+  cursor: pointer;
+  outline: none;
+  transition: all 0.2s ease;
+  min-width: 140px;
+}
+
+.filterSelect:focus, .filterSelect:hover {
+  border-color: var(--accent, #A12A2F);
+  box-shadow: 0 0 0 2px rgba(161,42,47, 0.1);
+}
+
 /* Day Selector Navbar */
 .daySelector {
   display: flex;

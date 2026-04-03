@@ -9,6 +9,11 @@ export default function ClassSchedule() {
   const [scheduleData, setScheduleData] = useState([]);
   const [activeDay, setActiveDay] = useState("Monday");
   const [loading, setLoading] = useState(true);
+  const [selectedYear, setSelectedYear] = useState("All");
+  const [selectedSemester, setSelectedSemester] = useState("All");
+
+  const YEARS = ["All", "Year 1", "Year 2", "Year 3", "Year 4"];
+  const SEMESTERS = ["All", "Semester 1", "Semester 2", "Semester 3", "Semester 4", "Semester 5", "Semester 6", "Semester 7", "Semester 8"];
 
   useEffect(() => {
     // Determine the current day of the week to set as default active tab
@@ -36,8 +41,13 @@ export default function ClassSchedule() {
     fetchSchedule();
   }, []);
 
-  // Filter out the active day's classes
-  const activeClasses = scheduleData.find((d) => d.day === activeDay)?.classes || [];
+  // Filter out the active day's classes and apply year/semester filters
+  const activeDayData = scheduleData.find((d) => d.day === activeDay)?.classes || [];
+  const activeClasses = activeDayData.filter((cls) => {
+    const matchYear = selectedYear === "All" || cls.year === selectedYear;
+    const matchSemester = selectedSemester === "All" || cls.semester === selectedSemester;
+    return matchYear && matchSemester;
+  });
 
   return (
     <div className={styles.pageContainer}>
@@ -47,6 +57,36 @@ export default function ClassSchedule() {
           <p className={styles.subtitle}>
             Stay on top of your daily goals with your personalized timeline.
           </p>
+        </div>
+
+        {/* Filters */}
+        <div className={styles.filtersContainer}>
+          <div className={styles.filterGroup}>
+            <label htmlFor="yearFilter">Year:</label>
+            <select
+              id="yearFilter"
+              value={selectedYear}
+              onChange={(e) => setSelectedYear(e.target.value)}
+              className={styles.filterSelect}
+            >
+              {YEARS.map((year) => (
+                <option key={year} value={year}>{year}</option>
+              ))}
+            </select>
+          </div>
+          <div className={styles.filterGroup}>
+            <label htmlFor="semesterFilter">Semester:</label>
+            <select
+              id="semesterFilter"
+              value={selectedSemester}
+              onChange={(e) => setSelectedSemester(e.target.value)}
+              className={styles.filterSelect}
+            >
+              {SEMESTERS.map((sem) => (
+                <option key={sem} value={sem}>{sem}</option>
+              ))}
+            </select>
+          </div>
         </div>
 
         {/* Day Navigator */}
