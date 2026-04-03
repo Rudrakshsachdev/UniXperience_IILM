@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "day": "Monday",
+    "classes": [
+      { "id": 101, "course": "Data Structures & Algorithms", "time": "09:00 AM - 10:30 AM", "type": "Lecture", "room": "Block A - 302", "professor": "Dr. Sharma" },
+      { "id": 102, "course": "Computer Networks Lab", "time": "11:00 AM - 01:00 PM", "type": "Lab", "room": "Block C - Lab 4", "professor": "Prof. Mehta" },
+      { "id": 103, "course": "Database Management Systems", "time": "02:00 PM - 03:30 PM", "type": "Lecture", "room": "Block B - 105", "professor": "Dr. Gupta" }
+    ]
+  },
+  {
+    "id": 2,
+    "day": "Tuesday",
+    "classes": [
+      { "id": 201, "course": "Operating Systems", "time": "09:00 AM - 10:30 AM", "type": "Lecture", "room": "Block A - 305", "professor": "Prof. Singh" },
+      { "id": 202, "course": "Artificial Intelligence", "time": "11:00 AM - 12:30 PM", "type": "Lecture", "room": "Block B - 201", "professor": "Dr. Verma" },
+      { "id": 203, "course": "Design and Analysis of Algorithms Lab", "time": "02:00 PM - 04:00 PM", "type": "Lab", "room": "Block C - Lab 2", "professor": "Dr. Sharma" }
+    ]
+  },
+  {
+    "id": 3,
+    "day": "Wednesday",
+    "classes": [
+      { "id": 301, "course": "Software Engineering", "time": "10:00 AM - 11:30 AM", "type": "Lecture", "room": "Block A - 102", "professor": "Prof. Joshi" },
+      { "id": 302, "course": "Computer Architecture", "time": "12:00 PM - 01:30 PM", "type": "Lecture", "room": "Block B - 304", "professor": "Dr. Kapoor" },
+      { "id": 303, "course": "Database Management Systems Lab", "time": "02:30 PM - 04:30 PM", "type": "Lab", "room": "Block C - Lab 6", "professor": "Dr. Gupta" }
+    ]
+  },
+  {
+    "id": 4,
+    "day": "Thursday",
+    "classes": [
+      { "id": 401, "course": "Data Structures & Algorithms", "time": "09:00 AM - 10:30 AM", "type": "Lecture", "room": "Block A - 302", "professor": "Dr. Sharma" },
+      { "id": 402, "course": "Theory of Computation", "time": "11:00 AM - 12:30 PM", "type": "Lecture", "room": "Block B - 205", "professor": "Dr. Reddy" },
+      { "id": 403, "course": "Operating Systems Lab", "time": "02:00 PM - 04:00 PM", "type": "Lab", "room": "Block C - Lab 1", "professor": "Prof. Singh" }
+    ]
+  },
+  {
+    "id": 5,
+    "day": "Friday",
+    "classes": [
+      { "id": 501, "course": "Artificial Intelligence", "time": "09:30 AM - 11:00 AM", "type": "Lecture", "room": "Block B - 201", "professor": "Dr. Verma" },
+      { "id": 502, "course": "Cyber Security Basics", "time": "11:30 AM - 01:00 PM", "type": "Seminar", "room": "Main Auditorium", "professor": "Guest Lecturer" },
+      { "id": 503, "course": "Project Mentorship", "time": "02:00 PM - 04:00 PM", "type": "Project", "room": "Innovation Lab", "professor": "All Faculty" }
+    ]
+  }
+]

@@ -2,7 +2,7 @@ from fastapi import FastAPI, Depends
 from fastapi.middleware.cors import CORSMiddleware
 from sqlalchemy.orm import Session
 from .core.database import get_db
-from .api.v1.endpoints import chat
+from .api.v1.endpoints import chat, schedule
 
 
 app = FastAPI()
@@ -17,6 +17,7 @@ app.add_middleware(
 )
 
 app.include_router(chat.router, prefix="/api/v1")
+app.include_router(schedule.router, prefix="/api/v1")
 
 @app.get("/")
 async def root():

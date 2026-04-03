@@ -1,0 +1,274 @@
+.pageContainer {
+  min-height: 100vh;
+  background-color: var(--background, #f8fafc);
+  padding: 6rem 1.5rem 4rem;
+  font-family: var(--font-inter, sans-serif);
+}
+
+.maxW {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.header {
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.title {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: var(--primary, #1E3A5F);
+  margin-bottom: 0.5rem;
+  letter-spacing: -0.02em;
+}
+
+.subtitle {
+  color: #64748b;
+  font-size: 1.1rem;
+}
+
+/* Day Selector Navbar */
+.daySelector {
+  display: flex;
+  gap: 0.5rem;
+  justify-content: center;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.dayBtn {
+  background: white;
+  border: 1px solid #e2e8f0;
+  padding: 0.75rem 1.5rem;
+  border-radius: 9999px;
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #475569;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.02);
+}
+
+.dayBtn:hover {
+  background: #f1f5f9;
+  transform: translateY(-1px);
+}
+
+.activeDay {
+  background: var(--accent, #A12A2F);
+  border-color: var(--accent, #A12A2F);
+  color: white;
+  box-shadow: 0 4px 12px rgba(161, 42, 47, 0.25);
+}
+
+.activeDay:hover {
+  background: #8b2328;
+  color: white;
+}
+
+/* Timeline Layout */
+.timeline {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  position: relative;
+  padding-left: 1rem;
+}
+
+/* The vertical line */
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 2rem;
+  width: 2px;
+  background: #e2e8f0;
+  z-index: 0;
+}
+
+.timelineItem {
+  display: flex;
+  gap: 2rem;
+  align-items: flex-start;
+  position: relative;
+  z-index: 1;
+}
+
+/* The timeline dot */
+.timeCol {
+  flex-shrink: 0;
+  width: 140px;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 1.5rem;
+  padding-top: 1.5rem;
+}
+
+.timeText {
+  font-size: 0.9rem;
+  font-weight: 700;
+  color: #475569;
+}
+
+.dot {
+  width: 16px;
+  height: 16px;
+  background: white;
+  border: 3px solid var(--accent, #A12A2F);
+  border-radius: 50%;
+  position: relative;
+  right: -23px; /* align with timeline line precisely */
+  z-index: 2;
+  box-shadow: 0 0 0 4px rgba(161,42,47, 0.1);
+}
+
+/* Card */
+.card {
+  flex-grow: 1;
+  background: white;
+  border-radius: 16px;
+  padding: 1.5rem;
+  box-shadow: 0 4px 20px rgba(0,0,0,0.06);
+  border: 1px solid #f1f5f9;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 30px rgba(0,0,0,0.08);
+}
+
+.cardHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1rem;
+}
+
+.courseWrap {
+  display: flex;
+  flex-direction: column;
+}
+
+.courseName {
+  font-size: 1.25rem;
+  font-weight: 800;
+  color: var(--primary, #1E3A5F);
+  margin: 0;
+}
+
+.typeBadge {
+  background: #f1f5f9;
+  color: #475569;
+  padding: 0.25rem 0.75rem;
+  border-radius: 6px;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  margin-top: 0.5rem;
+  display: inline-block;
+  width: max-content;
+}
+
+.badgeLecture {
+  background: #e0f2fe;
+  color: #0369a1;
+}
+
+.badgeLab {
+  background: #dcfce7;
+  color: #15803d;
+}
+
+.badgeSeminar {
+  background: #fef3c7;
+  color: #b45309;
+}
+
+.cardDetails {
+  display: flex;
+  gap: 1.5rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
+  border-top: 1px dashed #e2e8f0;
+}
+
+.detailItem {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #64748b;
+  font-size: 0.95rem;
+}
+
+.detailIcon {
+  color: var(--accent, #A12A2F);
+}
+
+/* Loading/Empty States */
+.loading {
+  text-align: center;
+  padding: 4rem;
+  color: #64748b;
+  font-size: 1.1rem;
+  font-style: italic;
+}
+
+.emptyState {
+  background: white;
+  border-radius: 16px;
+  padding: 4rem 2rem;
+  text-align: center;
+  border: 1px dashed #cbd5e1;
+  color: #64748b;
+  margin-left: 172px; /* aligns with cards */
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .pageContainer {
+    padding-top: 8rem;
+  }
+  
+  .timeline::before {
+    left: 1.5rem;
+  }
+  
+  .timelineItem {
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .timeCol {
+    width: 100%;
+    justify-content: flex-start;
+    padding-top: 0;
+    padding-left: 2.5rem;
+    position: relative;
+  }
+  
+  .dot {
+    position: absolute;
+    left: -13px;
+    right: auto;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+  
+  .card {
+    width: 90%;
+    margin-left: 2.5rem;
+  }
+  
+  .emptyState {
+    margin-left: 2.5rem;
+    width: 90%;
+  }
+}

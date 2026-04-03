@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import styles from "./QuickAccess.module.css";
 
 // SVG Icons tailored to Quick Access features
@@ -83,6 +84,7 @@ const DASHBOARD_LINKS = [
     description: "Access your real-time daily timetable, classroom assignments, and upcoming lecture details.",
     icon: <CalendarIcon />,
     actionLabel: "View Schedule",
+    href: "/class-schedule"
   },
   {
     id: 2,
@@ -90,6 +92,7 @@ const DASHBOARD_LINKS = [
     description: "Browse detailed course outlines, learning objectives, and recommended study materials.",
     icon: <NotebookIcon />,
     actionLabel: "View Syllabus",
+    href: "#"
   },
   {
     id: 3,
@@ -97,6 +100,7 @@ const DASHBOARD_LINKS = [
     description: "Connect with faculty, staff, and peers across the university through our centralized directory.",
     icon: <ContactBookIcon />,
     actionLabel: "View Directory",
+    href: "#"
   },
 ];
 
@@ -123,7 +127,7 @@ export default function QuickAccess() {
               <h3 className={styles.cardTitle}>{link.title}</h3>
               <p className={styles.cardDescription}>{link.description}</p>
               
-              <button className={styles.actionBtn}>
+              <Link href={link.href} className={styles.actionBtn}>
                 {link.actionLabel}
                 <svg
                   className={styles.btnIcon}
@@ -138,7 +142,7 @@ export default function QuickAccess() {
                 >
                   <path d="M3 8h10M9 4l4 4-4 4" />
                 </svg>
-              </button>
+              </Link>
             </div>
           ))}
         </div>
