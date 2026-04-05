@@ -111,11 +111,16 @@ def retrieve_context(query: str, k: int = 3):
     str: A concatenated string of relevant context pieces retrieved from the vector databases, or an empty string if an error occurs during retrieval.
     """
 
+    """
+    This try block is used to catch any exceptions that may occur during the retrieval process. If an exception occurs, it will be logged and an empty string will be returned.
+    """
     try:
+        # This line detects the category of the user's query to route it to the appropriate vector database for retrieval.
         category = detect_category(query)
         logging.info(f"==> [RAG Debug] Detected Category: {category} for query: '{query}'")
 
         # Prioritize the detected category, but also pull a little from others as fallback
+
         primary_results = []
         fallback_results = []
 

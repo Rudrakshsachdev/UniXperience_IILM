@@ -1,12 +1,158 @@
 [
   {
-    "name": "Dr. Sharma",
-    "department": "Computer Science",
-    "email": "sharma@uni.edu"
+    "name": "Dr. Anurag Jain",
+    "department": "School of Computer Science & Engineering",
+    "profile": "Dr. Anurag Jain mentors students in AI and data-driven innovation, with a strong focus on research-led teaching in computer science.",
+    "email": "anurag.jain@iilm.edu"
   },
   {
     "name": "Prof. Mehta",
-    "department": "Mathematics",
+    "department": "School of Computer Science & Engineering",
+    "profile": "Prof. Mehta contributes to core computing foundations and supports learners through practical, concept-first classroom sessions.",
     "email": "mehta@uni.edu"
+  },
+  {
+    "name": "Puja Acharya",
+    "department": "School of Computer Science & Engineering",
+    "profile": "Puja Acharya focuses on student-centered learning and guides projects that connect software concepts to real-world use cases.",
+    "email": "puja.acharya@iilm.edu"
+  },
+  {
+    "name": "Pallavi Pandey",
+    "department": "School of Computer Science & Engineering",
+    "profile": "Pallavi Pandey supports interdisciplinary computing education and encourages strong analytical and problem-solving skills.",
+    "email": "pallavi.pandey@iilm.edu"
+  },
+  {
+    "name": "Dr Sonam Lata",
+    "department": "School of Computer Science & Engineering",
+    "profile": "Dr Sonam Lata works on modern computing methodologies and helps students build confidence in research and technical writing.",
+    "email": "sonam.lata@iilm.edu"
+  },
+  {
+    "name": "Pooja batra Nagpal",
+    "department": "School of Computer Science & Engineering",
+    "profile": "Pooja Batra Nagpal brings an application-oriented approach to teaching and mentors learners in software design best practices.",
+    "email": "pooja.nagpal@iilm.edu"
+  },
+  {
+    "name": "Dr. Sapna Arora",
+    "department": "School of Computer Science & Engineering",
+    "profile": "Dr. Sapna Arora emphasizes conceptual depth and industry relevance while guiding students in emerging computing domains.",
+    "email": "sapna.arora@iilm.edu"
+  },
+  {
+    "name": "Neha Bansal",
+    "department": "School of Computer Science & Engineering",
+    "profile": "Neha Bansal is engaged in outcome-based teaching and supports students in strengthening coding discipline and teamwork.",
+    "email": "neha.bansal@iilm.edu"
+  },
+  {
+    "name": "Samridhi Singhal",
+    "department": "School of Computer Science & Engineering",
+    "profile": "Samridhi Singhal encourages innovation in classroom projects and helps students convert ideas into practical solutions.",
+    "email": "samridhi.singhal@iilm.edu"
+  },
+  {
+    "name": "Preeti Mehta",
+    "department": "School of Computer Science & Engineering",
+    "profile": "Preeti Mehta supports foundational and advanced computing courses with a balanced mix of theory and implementation.",
+    "email": "preeti.mehta@iilm.edu"
+  },
+  {
+    "name": "Jayati Tripathi",
+    "department": "School of Computer Science & Engineering",
+    "profile": "Jayati Tripathi mentors students on structured problem solving and encourages hands-on exploration of computing tools.",
+    "email": "jayati.tripathi@iilm.edu"
+  },
+  {
+    "name": "Rahul Thakur",
+    "department": "School of Computer Science & Engineering",
+    "profile": "Rahul Thakur promotes practical coding workflows and helps learners connect classroom concepts with project execution.",
+    "email": "rahul.thakur@iilm.edu"
+  },
+  {
+    "name": "Aarti Tewari",
+    "department": "School of Computer Science & Engineering",
+    "profile": "Aarti Tewari focuses on inclusive learning practices and supports students in developing strong computational thinking.",
+    "email": "aarti.tewari@iilm.edu"
+  },
+  {
+    "name": "Naved Ahmad",
+    "department": "School of Computer Science & Engineering",
+    "profile": "Naved Ahmad guides learners in applied computing and encourages clear, efficient, and maintainable code development.",
+    "email": "naved.ahmad@iilm.edu"
+  },
+  {
+    "name": "Shagun Panghal",
+    "department": "School of Computer Science & Engineering",
+    "profile": "Shagun Panghal supports student growth through interactive sessions and emphasizes consistency in technical learning.",
+    "email": "shagun.panghal@iilm.edu"
+  },
+  {
+    "name": "Abhishek Toofani",
+    "department": "School of Computer Science & Engineering",
+    "profile": "Abhishek Toofani contributes to skill-oriented teaching and mentors students in solving real-world computing challenges.",
+    "email": "abhishek.toofani@iilm.edu"
+  },
+  {
+    "name": "Amit Kumar Tiwari",
+    "department": "School of Computer Science & Engineering",
+    "profile": "Amit Kumar Tiwari emphasizes strong technical foundations and supports project-based learning across computer science topics.",
+    "email": "amit.kumar.tiwari@iilm.edu"
+  },
+  {
+    "name": "Tanu Gupta",
+    "department": "School of Computer Science & Engineering",
+    "profile": "Tanu Gupta engages students with practical examples and helps them build confidence in software development workflows.",
+    "email": "tanu.gupta@iilm.edu"
+  },
+  {
+    "name": "Vikas Kumar Jayswal",
+    "department": "School of Computer Science & Engineering",
+    "profile": "Vikas Kumar Jayswal focuses on concept clarity and supports learners in developing scalable and reliable coding practices.",
+    "email": "vikas.jayswal@iilm.edu"
+  },
+  {
+    "name": "Puneet Bawa",
+    "department": "School of Computer Science & Engineering",
+    "profile": "Puneet Bawa mentors students in analytical reasoning and encourages thoughtful design of computing solutions.",
+    "email": "puneet.bawa@iilm.edu"
+  },
+  {
+    "name": "Vardaan Pajnoo",
+    "department": "School of Computer Science & Engineering",
+    "profile": "Vardaan Pajnoo supports learning through structured instruction and helps students refine implementation quality.",
+    "email": "vardaan.pajnoo@iilm.edu"
+  },
+  {
+    "name": "Vishwa Prakash Jha",
+    "department": "School of Computer Science & Engineering",
+    "profile": "Vishwa Prakash Jha brings a practical perspective to teaching and motivates learners to build robust computing projects.",
+    "email": "vishwa.prakash@iilm.edu"
+  },
+  {
+    "name": "Devraj Sharma",
+    "department": "School of Computer Science & Engineering",
+    "profile": "Devraj Sharma guides students in foundational computing and encourages disciplined, test-driven development habits.",
+    "email": "devraj.sharma@iilm.edu"
+  },
+  {
+    "name": "Anurag Jain",
+    "department": "School of Computer Science & Engineering",
+    "profile": "Anurag Jain supports applied learning in computer science and helps students align technical skills with career goals.",
+    "email": "anurag.jain@iilm.edu"
+  },
+  {
+    "name": "Umang Garg",
+    "department": "School of Computer Science & Engineering",
+    "profile": "Umang Garg works with students on modern development practices and promotes clean architecture in software projects.",
+    "email": "umang.garg@iilm.edu"
+  },
+  {
+    "name": "Amar Shukla",
+    "department": "School of Computer Science & Engineering",
+    "profile": "Amar Shukla encourages innovation-led learning and mentors students in turning concepts into deployable solutions.",
+    "email": "amar.shukla@iilm.edu"
   }
 ]
